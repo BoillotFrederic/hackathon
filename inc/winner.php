@@ -16,12 +16,20 @@
      </div>
     <div  id="commentaire"class="col l4 m4 s12 center-align">
       <p> Commentaires :</p>
-        <div id="com1"></div>
-        <div id="com2"></div>
-        <div id="com3"></div>
-        <div id="com4"></div>
-        <div id="com3"></div>
-        <div id="com4"></div>
+        <div id="com1">pppp</div>
+        <div id="com2">pppp</div>
+        <div id="com3">pppp</div>
+        <div id="com4">pppp</div>
+        <div id="com3">ppppp</div>
+        <div id="com4">ppppp</div>
+        <div id="com4">pppp</div>
+        <div id="com3">ppppp</div>
+        <div id="com4">ppppp</div>
+        <div id="com3">ppppp</div>
+        <div id="com4">ppppp</div>
+        <div id="com4">pppp</div>
+        <div id="com3">ppppp</div>
+        <div id="com4">ppppp</div>
   </div>
  </div>
 </div>

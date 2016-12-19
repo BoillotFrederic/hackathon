@@ -22,5 +22,6 @@
 
 #commentaire{
 border:1px double black;
-height:90%;
+overflow-y: scroll;
+height:210px;
 }
