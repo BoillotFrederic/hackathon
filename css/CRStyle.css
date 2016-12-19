@@ -1,4 +1,4 @@
-@@font-face {
+@font-face {
     font-family: "Ubuntu";
     src: ("../fonts/Ubuntu-M.ttf")
 }
@@ -7,26 +7,26 @@
 /*logo taille */
 
 .parallax-container img {
-    height: 90%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-h3 {
-    font-family: Ubuntu;
-    padding-bottom: 2%;
-    color: #333E52;
-}
 
-#gagnant {
-    height: 100%;
-    width: 100%;
-}
 
 #commentaire {
     color: #333E53;
     font-family: Ubuntu;
     border: 1px double black;
     overflow-y: scroll;
-    height: 210px;
+}
+@keyframes fadeinout {
+   from { opacity: 0; }
+   50% { opacity: 1;}
+   to { opacity: 0; }
+}
+.blink {
+animation: fadeinout 2s infinite;
+font-family: Ubuntu;
+padding-bottom: 2%;
+color: #333E52;
 }
