@@ -1,25 +1,59 @@
-body, html, #container-left
+@media all and (max-width: 600px)
+{
+  #navBar
+  {
+    height:200px !important;
+    width:100% !important;
+  }
+  #container-main
+  {
+    padding-left:0 !important;
+    padding-top:200px;
+  }
+  #navBar a
+  {
+    
+  }
+}
+body, html
 {
   height:100%;
 }
 #navBar
 {
-  height:100%;
   position:fixed;
   left:0;
   top:0;
-  padding-bottom:50px;
+  height:100%;
+  width:205px;
+}
+#navBar a
+{
+  padding:20px 0 20px 0;
+  display:block;
+  text-align:center;
+  outline:none;
+  color:white;
+}
+#navBar a:hover
+{
+  background-color:#01579b;
 }
 #navBar a img
 {
-  margin-bottom:-50px;
+  display:inline;
+  width:70px;
+}
+#navBar div
+{
+  width:205px;
+}
+#container-main
+{
+  padding-left:200px;
 }
 nav
 {
   background-color:transparent;
   box-shadow:none;
-}
-#container-right
-{
-  padding:0;
 }
