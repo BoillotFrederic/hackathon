@@ -15,7 +15,7 @@
 
      </div>
     <div id="commentaire"class="col l4 m4 s4 center-align">
-      <p> Commentaires :</p>
+      <p>Commentaires :</p>
         <div id="com1">pppp</div>
         <div id="com2">pppp</div>
         <div id="com3">pppp</div>
