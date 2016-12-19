@@ -10,6 +10,15 @@ font-family: Ubuntu;
   padding-left: 2%;
   padding-right: 2%;
 }
+.car{
+  border-top: grey 2px;
+  border-bottom: grey 2px;
+  padding-bottom: 10%;
+
+}
+.carousel{
+        overflow: visible;
+}
 .carousel .carousel-item {
   outline: none;
   text-align: justify;
@@ -24,5 +33,4 @@ width:350px !important;}
    font-family: mario;
    font-size: 50px;
    color:#65909A;
-   padding: 2%;
  }
