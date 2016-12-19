@@ -6,6 +6,10 @@
 src:url(../fonts/Ubuntu-M.ttf);
 font-family: Ubuntu;
 }
+.elise{
+  padding-left: 2%;
+  padding-right: 2%;
+}
 .carousel .carousel-item {
   outline: none;
   text-align: justify;
@@ -13,12 +17,12 @@ font-family: Ubuntu;
   color:#2a2a2a;
   font-size: 20px;
   font-family: Ubuntu;
-width:400px !important;}
+width:350px !important;}
 
  .titrecar {
    text-align: center;
    font-family: mario;
-   font-size: 40px;
+   font-size: 50px;
    color:#65909A;
    padding: 2%;
  }
