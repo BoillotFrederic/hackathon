@@ -1,3 +1,4 @@
+/*Nabar en mode mobile*/
 @media all and (max-width: 600px)
 {
   #navBar
@@ -22,6 +23,8 @@
     justify-content:center;
   }
 }
+
+/*Navbar générale*/
 body, html
 {
   height:100%;
@@ -56,12 +59,9 @@ body, html
   display:inline;
   width:70px;
 }
+
+/*Contenu du site*/
 #container-main
 {
   padding-left:200px;
-}
-nav
-{
-  background-color:transparent;
-  box-shadow:none;
 }
