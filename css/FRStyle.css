@@ -2,17 +2,23 @@
   font-family: mario;
   src:url(../fonts/SuperMario256.ttf);
 }
-img{
-  width: 100%;
+@font-face {
+src:url(../fonts/Ubuntu-M.ttf);
+font-family: Ubuntu;
 }
-.carousel-item{
-  text-align: left;
+.carousel .carousel-item {
+  outline: none;
+  text-align: justify;
+  text-align-last: center;
   color:#2a2a2a;
   font-size: 20px;
-}
-h1{
-  text-align: center;
-  font-family: mario;
-  font-size: 30px;
-  color:#65909A;
-}
+  font-family: Ubuntu;
+width:400px !important;}
+
+ .titrecar {
+   text-align: center;
+   font-family: mario;
+   font-size: 40px;
+   color:#65909A;
+   padding: 2%;
+ }
