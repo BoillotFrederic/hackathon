@@ -1,8 +1,26 @@
-.parallax-container
-{
-  height:500px;
-  width:100%;
-  background-repeat: no-repeat;
-  background-size: hover;
 
+
+
+/*logo taille */
+.parallax-container img
+{
+  height:90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ h3{
+  padding-bottom:2%;
+
+ }
+#gagnant {
+  height:100%;
+  width: 100%;
+
+
+}
+
+#commentaire{
+border:1px double black;
+height:90%;
 }
