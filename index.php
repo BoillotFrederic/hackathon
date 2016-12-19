@@ -12,15 +12,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <div class="row">
-      <div class="col s3 m3 l3">
+    <div class="row" id="container-left">
+      <div class="col s3 m3 l3" id="navBar">
         <?php include 'inc/navBar.php'; ?>
       </div>
-      <div class="col s9 m9 l9">
+      <div class="col s9 m9 l9 right" id="container-right">
     <?php
 
       include 'inc/logo.php';
       include 'inc/description.php';
+      include 'inc/winner.php';
       include 'inc/carousel.php';
 
     ?>

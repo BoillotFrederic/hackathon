@@ -1,0 +1,21 @@
+body, html, #container-left
+{
+  height:100%;
+}
+#navBar
+{
+  background-color:blue;
+  height:100%;
+  position:fixed;
+  left:0;
+  top:0;
+}
+nav
+{
+  background-color:transparent;
+  box-shadow:none;
+}
+#container-right
+{
+  padding:0;
+}
