@@ -1,0 +1,10 @@
+#description p {
+    padding: 2%;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1.3em;
+}
+
+#description h1 {
+    text-align: center;
+}
