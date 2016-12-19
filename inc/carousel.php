@@ -1,43 +1,15 @@
-<div class="row col m 9 col s 9 col s 9">
-<div class="carousel carousel-slider center" data-indicators="true">
-  <div class="carousel-fixed-item center">
-    <a class="btn waves-effect white grey-text darken-text-2">Aggrandir</a>
-  </div>
-  <div class="carousel-item blue white-text" src="imgs/zelda.png">
-    <h2>2e position</h2>
-    <p class="white-text">Description du site ex: Photo de coolos58 prise devant le palais de justice</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#two!">
-    <h2>3e position</h2>
-    <p class="white-text">Description du site</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#three!">
-    <h2>4e position</h2>
-    <p class="white-text">Description du site</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#four!">
-    <h2>5e position</h2>
-    <p class="white-text">Description du site</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#four!">
-    <h2>6e position</h2>
-    <p class="white-text">Description du site</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#four!">
-    <h2>7e position</h2>
-    <p class="white-text">Description du site</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#four!">
-    <h2>8e position</h2>
-    <p class="white-text">Description du site</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#four!">
-    <h2>9e position</h2>
-    <p class="white-text">Description du site</p>
-  </div>
-  <div class="carousel-item blue white-text" href="#four!">
-    <h2>10e position</h2>
-    <p class="white-text">Description du site</p>
-  </div>
+<div class="row">
+  <div class="col m8 col s8 col l8">
+<div class="carousel">
+  <a class="carousel-item active" href="#one!"><h1>2nd</h1><img src="imgs/zelda.png" class="center-block" >coolos58 qui a pris sa photo devant la cathedral de Boulogne sur mer</a>
+  <a class="carousel-item active" href="#two!"><h1>3rd</h1><img src="imgs/zelda.png" class="center-block">coolos58 qui a pris sa photo devant la cathedral de Boulogne sur mer</a>
+  <a class="carousel-item active" href="#three!"><h1>4rth</h1><img src="imgs/zelda.png" class="center-block">coolos58 qui a pris sa photo devant la cathedral de Boulogne sur mer</a>
+  <a class="carousel-item active" href="#four!"><h1>5th</h1><img src="imgs/zelda.png" class="center-block">coolos58 qui a pris sa photo devant la cathedral de Boulogne sur mer</a>
+  <a class="carousel-item active" href="#five!"><h1>6th</h1><img src="imgs/zelda.png" class="center-block">coolos58 qui a pris sa photo devant la cathedral de Boulogne sur mer</a>
+  <a class="carousel-item active" href="#five!"><h1>7th</h1><img src="imgs/zelda.png" class="center-block">coolos58 qui a pris sa photo devant la cathedral de Boulogne sur mer</a>
+  <a class="carousel-item active" href="#five!"><h1>8th</h1><img src="imgs/zelda.png" class="center-block">coolos58 qui a pris sa photo devant la cathedral de Boulogne sur mer</a>
+  <a class="carousel-item active" href="#five!"><h1>9th</h1><img src="imgs/zelda.png" class="center-block">coolos58 qui a pris sa photo devant la cathedral de Boulogne sur mer</a>
+  <a class="carousel-item active" href="#five!"><h1>10th</h1><img src="imgs/zelda.png" class="center-block">coolos58 qui a pris sa photo devant la cathedral de Boulogne sur mer</a>
+</div>
 </div>
 </div>

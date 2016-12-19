@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="row" id="container-left">
-      <div class="col s3 m3 l3" id="navBar">
+      <div class="col s3 m3 l3 blue-grey darken-4 valign-wrapper center" id="navBar">
         <?php include 'inc/navBar.php'; ?>
       </div>
       <div class="col s9 m9 l9 right" id="container-right">
@@ -23,6 +23,7 @@
       include 'inc/description.php';
       include 'inc/winner.php';
       include 'inc/carousel.php';
+      include 'inc/rest.php';
 
     ?>
       </div>
