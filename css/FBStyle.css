@@ -4,11 +4,15 @@ body, html, #container-left
 }
 #navBar
 {
-  background-color:blue;
   height:100%;
   position:fixed;
   left:0;
   top:0;
+  padding-bottom:50px;
+}
+#navBar a img
+{
+  margin-bottom:-50px;
 }
 nav
 {
