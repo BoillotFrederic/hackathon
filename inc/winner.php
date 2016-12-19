@@ -6,7 +6,7 @@
 <div class="container">
    <div class="row">
      <div class="col l12 m12 s12 center-align">
-          <p>Attention il reste plus que </p><p id="Compte"></p><p>pour participer</p>
+          <p><span id="colorred">Attention</span></p><p id="Compte"></p><p>pour participer</p>
       <h3 class="blink"> Gagnant de la semaine!</h3>
 
      </div>
