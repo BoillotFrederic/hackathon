@@ -3,7 +3,7 @@
   <div class="carousel-fixed-item center">
     <a class="btn waves-effect white grey-text darken-text-2">Aggrandir</a>
   </div>
-  <div class="carousel-item blue white-text" href="imgs/zelda.png">
+  <div class="carousel-item blue white-text" src="imgs/zelda.png">
     <h2>2e position</h2>
     <p class="white-text">Description du site ex: Photo de coolos58 prise devant le palais de justice</p>
   </div>
