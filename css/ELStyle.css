@@ -1,0 +1,34 @@
+/*############DESCRIPTION###########*/
+
+#description p {
+    padding: 2%;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1.3em;
+    color: #333E52;
+}
+
+#description h1 {
+    text-align: center;
+    color: #333E52;
+}
+
+.btn {
+    background-color: #333E52;
+    margin-bottom: 2%;
+}
+
+.btn:hover {
+    background-color: #333E52;
+}
+
+.btn:focus {
+    background-color: #333E52;
+}
+
+.staggered-test p{
+    text-align: left;
+    color: #333E52;
+
+    margin-left: 25%;
+}
