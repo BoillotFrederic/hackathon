@@ -19,6 +19,11 @@ font-family: Ubuntu;
 .carousel-item{
     overflow: visible;
 }
+#about{
+    text-align: justify;
+    font-family: Ubuntu;
+    outline: none;
+}
 .carousel .carousel-item {
   overflow: visible;
   outline: none;
@@ -32,6 +37,12 @@ width:350px !important;}
  .titrecar {
    text-align: center;
    font-family: mario;
+   font-size: 50px;
+   color:#65909A;
+ }
+ .titreabout {
+   text-align: center;
+   font-family: Ubuntu;
    font-size: 50px;
    color:#65909A;
  }
