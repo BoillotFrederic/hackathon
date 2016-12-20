@@ -1,4 +1,5 @@
-@font-face {
+
+/*@font-face {
     font-family: "Ubuntu";
     src: url("../fonts/Ubuntu-M.ttf");
 }
@@ -8,7 +9,7 @@ html, body{
 }
 /*############DESCRIPTION###########*/
 
-#description p {
+/*#description p {
     font-family: Ubuntu;
     padding: 2%;
     text-align: justify;
@@ -93,4 +94,4 @@ html, body{
 
 #Compte span {
   font-family: Ubuntu;
-}
+}*/
