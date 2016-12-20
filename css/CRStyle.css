@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Ubuntu";
-    src: ("../fonts/Ubuntu-M.ttf")
+    src: url("../fonts/Ubuntu-M.ttf")
 }
 
 @font-face {
     font-family: "Digital";
-    src: ("../fonts/DigitalPlayItalicSt.ttf")
+    src: url("../fonts/DigitalPlayItalicSt.ttf")
 }
 
 /*logo taille */
@@ -16,14 +16,17 @@
     height: 90%;
     max-width:100%;
     min-width:40%,
+
 }
 #texte {
-z-index:10;
+z-index:99 !important;
 color:white;
 text-align:center;
 margin-top:10%;
 font-family:Ubuntu;
 font-size: 3em;
+
+
 }
 
 /*///////////////////////////////////////////////////*/
@@ -51,6 +54,7 @@ font-size: 3em;
     /* IE8 */
     filter: progid: DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand');
     /* IE6 and 7 */
+
 }
 
 
@@ -61,6 +65,8 @@ font-size: 3em;
     font-family: Ubuntu;
     border: 1px double black;
     overflow-y: scroll;
+  
+
 
 }
 
@@ -82,14 +88,10 @@ font-size: 3em;
     padding-bottom: 2%;
     color: #333E52;
 }
-#compte{
-  height:20px;
-  width:20%;
-  border:1px solid black;
+#Compte{
+
+  font-family: Digital;
 }
 #colorred{
 color:red;
-}
-#compte{
-  font-family: Digital;
 }

@@ -10,12 +10,13 @@ function onReSize()
 {
   $('#commentaire').height($('#gagnant').height());
 }
+
 function clickimage()
 {
   if(document.getElementById('commentaire').style.display == 'block')
  {
    document.getElementById('commentaire').style.display = 'none';
-  
+
  }
  else
 {
@@ -23,6 +24,8 @@ function clickimage()
 }
 
 }
+
+
 var Affiche=document.getElementById("Compte");
 
 	function Rebour() {
@@ -36,8 +39,10 @@ var Affiche=document.getElementById("Compte");
 	h = Math.floor ((sec - (j * n)) / 3600);
 	mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
 	sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
-	Affiche.innerHTML = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+	Affiche.innerHTML = "Temps restant : " + j +" jours" + " "  + h +" heures "+ mn +" minutes ";
+
 	window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+
 	}
 	tRebour=setTimeout ("Rebour();", 1000);
 	}
