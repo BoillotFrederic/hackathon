@@ -27,10 +27,10 @@
      <div class="modal-content">
        <h4>COMMENTAIRES</h4>
        <p>A bunch of text</p>
-       <div class ="com" id="comm">ppp</div>
-       <div class ="com" id="comm1">ppp</div>
-       <div class ="com" id="comm2">ppp</div>
-       <div class ="com">ppp</div>
+       <div class="com" id="comm">ppp</div>
+       <div class="com" id="comm1">ppp</div>
+       <div class="com" id="comm2">ppp</div>
+       <div class="com" id="comm3">ppp</div>
      </div>
      <div class="modal-footer">
        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
