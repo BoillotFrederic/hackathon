@@ -1,8 +1,13 @@
+/*Nabar en mode mobile*/
 @media all and (max-width: 600px)
 {
   #navBar
   {
     height:200px !important;
+    width:100% !important;
+  }
+  #navBar div
+  {
     width:100% !important;
   }
   #container-main
@@ -12,9 +17,14 @@
   }
   #navBar a
   {
-    
+    height:220px !important;
+    display:flex !important;
+    flex-direction:column;
+    justify-content:center;
   }
 }
+
+/*Navbar générale*/
 body, html
 {
   height:100%;
@@ -24,7 +34,12 @@ body, html
   position:fixed;
   left:0;
   top:0;
+  z-index:999;
   height:100%;
+  width:205px;
+}
+#navBar div
+{
   width:205px;
 }
 #navBar a
@@ -44,16 +59,9 @@ body, html
   display:inline;
   width:70px;
 }
-#navBar div
-{
-  width:205px;
-}
+
+/*Contenu du site*/
 #container-main
 {
   padding-left:200px;
-}
-nav
-{
-  background-color:transparent;
-  box-shadow:none;
 }

@@ -1,9 +1,10 @@
 
 $( document ).ready
 (
-  // Affichage de la navbar mobile
+  // Initiation du carousel
   function()
   {
     $('.carousel').carousel();
+    $('.modal').modal();
   }
 );

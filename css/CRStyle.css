@@ -3,6 +3,10 @@
     src: ("../fonts/Ubuntu-M.ttf")
 }
 
+@font-face {
+    font-family: "jelly";
+    src: ("../fonts/jellyWobblers.ttf")
+}
 
 /*logo taille */
 
@@ -13,7 +17,14 @@
     max-width:100%;
     min-width:40%,
 }
-
+#texte {
+z-index:10;
+color:white;
+text-align:center;
+margin-top:20%;
+font-family:jelly;
+font-size: 3em;
+}
 
 /*///////////////////////////////////////////////////*/
 
