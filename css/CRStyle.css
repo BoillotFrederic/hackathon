@@ -13,7 +13,6 @@
 .parallax-container img {
     background-repeat: no-repeat;
     background-size: cover;
-
     max-width:100%;
     min-width:40%,
 
@@ -26,7 +25,6 @@ margin-top:10%;
 font-family:Ubuntu;
 font-size: 3em;
 
-
 }
 
 /*///////////////////////////////////////////////////*/
@@ -37,10 +35,14 @@ font-size: 3em;
 #gagnant {
     height: 300px;
     width:100%;
-  
+    position: relative;
 }
 
-
+#boutonmodal{
+  z-index:99 !important;
+  position :relative;
+  margin-left:76.5%;
+}
 
 
 /*place commentaire*/
@@ -50,8 +52,6 @@ font-size: 3em;
     font-family: Ubuntu;
     border: 1px double black;
     overflow-y: scroll;
-
-
 
 }
 /*clignotement*/

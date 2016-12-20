@@ -14,16 +14,18 @@
      </div>
      <div   class="row">
      <div class="col l12 m12 s12 left-align">
-        <img id="gagnant" onclick="clickimage();"src="imgs/zelda.png" alt="zelda">
-   </div>
+         <img id="gagnant" onclick="clickimage();"src="imgs/zelda.png" alt="zelda">
+       <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commentaires</a>
+
+    </div>
 
      <!-- Modal Trigger -->
-   <a class="waves-effect waves-light btn" href="#modal1">Modal</a>
+
 
    <!-- Modal Structure -->
    <div id="modal1" class="modal bottom-sheet">
      <div class="modal-content">
-       <h4>Modal Header</h4>
+       <h4>COMMENTAIRES</h4>
        <p>A bunch of text</p>
      </div>
      <div class="modal-footer">
