@@ -86,8 +86,11 @@ html, body{
 
 /*###########CHRISTIAN############*/
 #Compte {
-    padding: 2%;
+    padding: 1%;
     margin: auto;
-    font-size: 2em;
-    background-color: rgba(238, 59, 59, 0.5);
+    font-size:150%;
+}
+
+#Compte span {
+  font-family: Ubuntu;
 }
