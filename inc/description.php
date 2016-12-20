@@ -15,7 +15,7 @@
     <div id="conditions"class="col l12 s12 m12 center">
 
         <ul class="staggered-test center">
-            <li class="">
+            <li>
 
                 <p> - Obligation de se prendre en photo devant un monument historique Boulonnais. </p> <br>
                 <p> - La photo doit être orignale, mais pas excentrique. </p> <br>

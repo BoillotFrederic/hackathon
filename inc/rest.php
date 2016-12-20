@@ -1,5 +1,5 @@
 
-<div id="rest" class="col row center ">
+<div id="rest" class="row center ">
   <h4 class="col s12 m12 l12 "> Les participants : </h4>
 
 
