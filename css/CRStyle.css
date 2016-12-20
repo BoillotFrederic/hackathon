@@ -10,6 +10,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 90%;
+    max-width:100%;
+    min-width:40%,
 }
 
 
@@ -76,4 +78,7 @@
 }
 #colorred{
 color:red;
+}
+#compte{
+  font-family: Ubuntu;
 }
