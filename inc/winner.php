@@ -27,9 +27,13 @@
      <div class="modal-content">
        <h4>COMMENTAIRES</h4>
        <p>A bunch of text</p>
+       <div id="com">ppp</div>
+       <div id="com">ppp</div>
+       <div id="com">ppp</div>
+       <div id="com">ppp</div>
      </div>
      <div class="modal-footer">
-       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
      </div>
    </div>
 
