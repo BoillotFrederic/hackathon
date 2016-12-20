@@ -15,7 +15,9 @@
     <div class="valign-wrapper teal darken-4" id="navBar">
       <?php include 'inc/navBar.php'; ?>
     </div>
-    <?php include 'inc/navBarDialog.php'; ?>
+    <?php include 'inc/addSelfie.php'; ?>
+    <?php include 'inc/historic.php'; ?>
+    <?php include 'inc/about.php'; ?>
     <div id="container-main">
     <?php
 
