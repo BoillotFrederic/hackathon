@@ -4,9 +4,7 @@
     src: url("../fonts/Ubuntu-M.ttf");
 }
 
-html, body{
-  overflow-x: hidden;
-}
+
 /*############DESCRIPTION###########*/
 
 /*#description p {
@@ -24,10 +22,7 @@ html, body{
     color: #004D40;
 }
 
-#conditions {
-    /*display: none;*/
 
-}
 
 .btn {
     font-family: Ubuntu;
@@ -89,7 +84,7 @@ html, body{
 #Compte {
     padding: 1%;
     margin: auto;
-    font-size:150%;
+    font-size: 2em;
 }
 
 #Compte span {

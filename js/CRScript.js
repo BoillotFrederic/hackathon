@@ -34,7 +34,7 @@ var Affiche=document.getElementById("Compte");
 	h = Math.floor ((sec - (j * n)) / 3600);
 	mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
 	sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
-	Affiche.innerHTML = "<span>Temps restant :</span> " + j +" <span> &nbsp jours</span>" + " "  + h +" <span> &nbsp heures </span>" + mn +" <span> &nbsp minutes</span> ";
+	Affiche.innerHTML = "<span>Temps restant : &nbsp</span> " + j +" <span> &nbsp jours &nbsp </span>  " + " "  + h +" <span> &nbsp heures &nbsp </span> " + mn +" <span> &nbsp minutes</span> ";
 
 	window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
 
