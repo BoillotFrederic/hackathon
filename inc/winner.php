@@ -25,23 +25,55 @@
    <!-- Modal Structure -->
    <div id="modal1" class="modal bottom-sheet">
      <div class="modal-content">
-       <h4>COMMENTAIRES</h4>
-      
-       <div class="com" id="comm">ppp</div>
-       <div class="com" id="comm1">ppp</div>
-       <div class="com" id="comm2">ppp</div>
-       <div class="com" id="comm3">ppp</div>
-       <div class="com" id="comm4">ppp</div>
-       <div class="com" id="comm5">ppp</div>
-       <div class="com" id="comm6">ppp</div>
-       <div class="com" id="comm7">ppp</div>
-     </div>
-     <div class="modal-footer">
-       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
-     </div>
-   </div>
+           <div class="row">
+                <div class="col 2l m2 s2">
+                    <h4 id="datess">DATE</h4>
+                     <div class="dates valign-wrapper" id="dates">2222</div>
+                      <div class="dates valign-wrapper" id="dates">2222</div>
+                       <div class="dates valign-wrapper" id="dates">2222</div>
+                        <div class="dates valign-wrapper" id="dates">2222</div>
+                         <div class="dates valign-wrapper" id="dates">2222</div>
+                          <div class="dates valign-wrapper" id="dates">2222</div>
+                           <div class="dates valign-wrapper" id="dates">2222</div>
+                            <div class="dates valign-wrapper" id="dates">2222</div>
+
+                </div>
+      <div class="col 2l m2 s2">
+        <h4 id="speudo1">PSEUDO</h4>
+         <div class="speudo valign-wrapper" id="speudo">2222</div>
+          <div class="speudo valign-wrapper" id="speudo">2222</div>
+           <div class="speudo valign-wrapper" id="speudo">2222</div>
+            <div class="speudo valign-wrapper" id="speudo">2222</div>
+             <div class="speudo valign-wrapper" id="speudo">2222</div>
+              <div class="speudo valign-wrapper" id="speudo">2222</div>
+               <div class="speudo valign-wrapper" id="speudo">2222</div>
+                <div class="speudo valign-wrapper" id="spudo">2222</div>
 
 
+      </div>
+
+
+      <div class="col l8 m8 s8">
+                <h4 id="comme">COMMENTAIRES</h4>
+         <div class="com valign-wrapper " id="comm">proute</div>
+          <div class="com valign-wrapper" id="comm1">ppp</div>
+           <div class="com valign-wrapper" id="comm2">ppp</div>
+            <div class="com valign-wrapper" id="comm3">ppp</div>
+             <div class="com valign-wrapper" id="comm4">ppp</div>
+              <div class="com valign-wrapper" id="comm5">ppp</div>
+               <div class="com valign-wrapper" id="comm6">ppp</div>
+                <div class="com valign-wrapper" id="comm7">ppp</div>
+
+     </div>
+
+       </div>
+     </div>
+
+
+           <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
+            </div>
+  </div>
 
  </div>
 </div>
