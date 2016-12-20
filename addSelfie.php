@@ -66,7 +66,7 @@ else
 $pseudo = POST_pseudo;
 $email = POST_email;
 
-$prep = $db -> prepare('INSERT INTO participant (pseudo, email, img, date) VALUES (:IN_pseudo, :IN_email, :IN_img, now())');
+$prep = $db -> prepare('INSERT INTO participant (pseudo, email, img, adddate) VALUES (:IN_pseudo, :IN_email, :IN_img, now())');
 $prep -> bindParam(':IN_pseudo', $pseudo);
 $prep -> bindParam(':IN_email', $email);
 $prep -> bindParam(':IN_img', $fileName);
