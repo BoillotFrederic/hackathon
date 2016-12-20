@@ -7,9 +7,11 @@
 </div>
 
 <div class="row">
+
     <div class="col l12 s12 m12 center">
-  <a href="#!" class="btn" id="btnconditions" onclick="Materialize.showStaggeredList('.staggered-test')">Conditions </a>
+        <a href="#!" class="btn" id="btnconditions" onclick="Materialize.showStaggeredList('.staggered-test')">Conditions </a>
     </div>
+
     <div id="conditions"class="col l12 s12 m12 center">
 
         <ul class="staggered-test center">

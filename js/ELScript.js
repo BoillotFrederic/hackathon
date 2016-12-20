@@ -1,6 +1,6 @@
-$("#btnconditions").click(function(){
-  $("#conditions").css({
-    "display" : "block"
-  });
+$("#btnconditions").click(function() {
+    $("#conditions").css({
+        "display": "block"
+    });
 
 })
