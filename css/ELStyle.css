@@ -3,7 +3,9 @@
     src: url("../fonts/Ubuntu-M.ttf");
 }
 
-
+body {
+  overflow-x: hidden;
+}
 /*############DESCRIPTION###########*/
 
 #description p {
@@ -57,6 +59,7 @@
 .rest img {
   height: 300px;
   border: solid black 1px;
+  margin: 2%;
 }
 
 #rest .row {
