@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "jelly";
-    src: ("../fonts/jellyWobblers.ttf")
+    font-family: "Digital";
+    src: ("../fonts/DigitalPlayItalicSt.ttf")
 }
 
 /*logo taille */
@@ -21,8 +21,8 @@
 z-index:10;
 color:white;
 text-align:center;
-margin-top:20%;
-font-family:jelly;
+margin-top:10%;
+font-family:Ubuntu;
 font-size: 3em;
 }
 
@@ -91,5 +91,5 @@ font-size: 3em;
 color:red;
 }
 #compte{
-  font-family: Ubuntu;
+  font-family: Digital;
 }
