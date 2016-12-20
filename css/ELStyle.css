@@ -24,7 +24,8 @@ body {
 }
 
 #conditions {
-    display: none;
+    /*display: none;*/
+    
 }
 
 .btn {

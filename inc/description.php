@@ -9,13 +9,13 @@
 <div class="row">
 
     <div class="col l12 s12 m12 center">
-        <a href="#!" class="btn" id="btnconditions" onclick="Materialize.showStaggeredList('.staggered-test')">Conditions </a>
+        <a href="#!" class="btn" id="btnconditions">Conditions </a>
     </div>
 
     <div id="conditions"class="col l12 s12 m12 center">
 
         <ul class="staggered-test center">
-            <li class="" style="transform: translateX(0px); opacity: 0;">
+            <li class="">
 
                 <p> - Obligation de se prendre en photo devant un monument historique Boulonnais. </p> <br>
                 <p> - La photo doit être orignale, mais pas excentrique. </p> <br>
