@@ -63,7 +63,20 @@ body {
   margin: 2%;
 }
 
-#rest .row {
-  height: 100%;
-  width: 100%;
+.rest{
+  position: relative;
+}
+
+.like{
+  position: absolute;
+  left: 30px;
+  bottom: 150px;
+  color: #64dd17;
+}
+
+.dislike {
+  position: absolute;
+  right: 10px;
+  bottom: 150px;
+  color: red;
 }
