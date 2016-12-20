@@ -15,9 +15,6 @@ font-family: Ubuntu;
     font-family: Ubuntu;
     outline: none;
 }
-.carousel-slider{
-  height: 400px !important;
-}
 .carousel-item {
   outline: none;
   text-align: justify;
@@ -27,7 +24,9 @@ font-family: Ubuntu;
   width:350px !important;
 }
 .carousel{
-     overflow: visible;
+    height:490px !important;
+}
+.carousel p{
     font-size: 20px;
 }
  .titrecar {
@@ -36,14 +35,33 @@ font-family: Ubuntu;
    font-size: 50px;
    color:#65909A;
  }
-#car{
-
+ .win{
+   width:20%;
+   height:20%;
+ }
+ .blue{
+background-color: #3299CC;
+ }
+.date{
+  text-align: center;
+  display: inline-flex;
+}
+ .icon{
+   color: #36648B;
+   padding-right: 20px;
+   padding-left: 40px;
  }
  .titreabout {
    text-align: center;
    font-family: Ubuntu;
    font-size: 50px;
    color:#65909A;
+ }
+ .titreli{
+   text-align: justify;
+   text-align-last: center;
+   color:#2a2a2a;
+   font-family: Ubuntu;
  }
  #historic{
 
