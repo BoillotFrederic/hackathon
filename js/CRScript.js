@@ -11,6 +11,7 @@ function onReSize()
   $('#commentaire').height($('#gagnant').height());
 }
 
+
 function clickimage()
 {
   if(document.getElementById('commentaire').style.display == 'block')
@@ -39,7 +40,7 @@ var Affiche=document.getElementById("Compte");
 	h = Math.floor ((sec - (j * n)) / 3600);
 	mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
 	sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
-	Affiche.innerHTML = "Temps restant : " + j +"<span> jours </span>" + " "  + h +" <span>heures </span>" + mn +"<span> minutes</span> ";
+	Affiche.innerHTML = "<span>Temps restant :</span> " + j +"<span>jours</span>" + " "  + h +" <span>heures </span>" + mn +"<span> minutes</span> ";
 
 	window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
 

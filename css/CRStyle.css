@@ -35,27 +35,12 @@ font-size: 3em;
 /*image gagnante*/
 
 #gagnant {
-    height: 200px;
-    transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -o-transition: all 1s ease;
+    height: 300px;
+    width:100%;
+  
 }
 
-#gagnant:hover {
-    transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    /* IE 9 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')";
-    /* IE8 */
-    filter: progid: DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand');
-    /* IE6 and 7 */
 
-}
 
 
 /*place commentaire*/
@@ -69,7 +54,7 @@ font-size: 3em;
 
 
 }
-
+/*clignotement*/
 @keyframes fadeinout {
     from {
         opacity: 0;
@@ -85,16 +70,18 @@ font-size: 3em;
 .blink {
     animation: fadeinout 2s infinite;
     font-family: Ubuntu;
-    padding-bottom: 2%;
+    padding-bottom:5%;
     color: #333E52;
 }
+/*///////////////////////////////////////*/
 #Compte{
-
+padding-bottom:2%;
   font-family: Digital;
+  color:red;
 }
 #colorred{
 color:red;
 }
 #Compte span{
-  color:red;
+  color:black;
 }
