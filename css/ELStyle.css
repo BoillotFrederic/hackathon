@@ -3,7 +3,7 @@
     src: url("../fonts/Ubuntu-M.ttf");
 }
 
-body {
+html, body{
   overflow-x: hidden;
 }
 /*############DESCRIPTION###########*/
@@ -50,6 +50,8 @@ body {
     margin-left: 33%;
 }
 
+/*######################REST#######################*/
+
 
 #rest h4 {
     font-family: Ubuntu;
@@ -57,10 +59,10 @@ body {
     padding: 2%;
 }
 
+
 .rest img {
   height: 300px;
   border: solid black 1px;
-  margin: 2%;
 }
 
 .rest{
@@ -76,7 +78,16 @@ body {
 
 .dislike {
   position: absolute;
-  right: 10px;
+  right: 20px;
   bottom: 150px;
   color: red;
+}
+
+
+/*###########CHRISTIAN############*/
+#Compte {
+    padding: 2%;
+    margin: auto;
+    font-size: 2em;
+    background-color: rgba(238, 59, 59, 0.5);
 }
