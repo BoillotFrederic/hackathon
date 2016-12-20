@@ -1,4 +1,10 @@
-$(document).ready(function()
-{
-  $('.carousel').carousel();
-});
+
+$( document ).ready
+(
+  // Initiation du carousel
+  function()
+  {
+    $('.carousel').carousel();
+    $('.modal').modal();
+  }
+);

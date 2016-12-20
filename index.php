@@ -12,11 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <div class="row" id="container-left">
-      <div class="col s3 m3 l3 blue-grey darken-4 valign-wrapper center" id="navBar">
-        <?php include 'inc/navBar.php'; ?>
-      </div>
-      <div class="col s9 m9 l9 right" id="container-right">
+    <div class="valign-wrapper teal darken-4" id="navBar">
+      <?php include 'inc/navBar.php'; ?>
+    </div>
+    <?php include 'inc/addSelfie.php'; ?>
+    <?php include 'inc/historic.php'; ?>
+    <?php include 'inc/about.php'; ?>
+    <div id="container-main">
     <?php
 
       include 'inc/logo.php';
@@ -26,10 +28,10 @@
       include 'inc/rest.php';
 
     ?>
-      </div>
     </div>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/182356f2e8.js"></script>
     <script src="js/FBScript.js"></script>
     <script src="js/CRScript.js"></script>
     <script src="js/FRScript.js"></script>
