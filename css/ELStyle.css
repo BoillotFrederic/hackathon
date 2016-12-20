@@ -51,4 +51,15 @@
     font-family: Ubuntu;
     color: #333E52;
     margin-bottom: 5%;
+    padding: 2%;
+}
+
+.rest img {
+  height: 300px;
+  border: solid black 1px;
+}
+
+#rest .row {
+  height: 100%;
+  width: 100%;
 }
