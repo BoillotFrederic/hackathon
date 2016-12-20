@@ -16,10 +16,11 @@ font-family: Ubuntu;
   padding-bottom: 10%;
 
 }
-.carousel{
-        overflow: visible;
+.carousel-item{
+    overflow: visible;
 }
 .carousel .carousel-item {
+  overflow: visible;
   outline: none;
   text-align: justify;
   text-align-last: center;
