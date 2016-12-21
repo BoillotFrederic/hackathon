@@ -74,7 +74,6 @@ $winnerData = $query->fetch();
    <!-- Modal Structure -->
    <div id="modal1" class="modal bottom-sheet">
      <div class="modal-content">
-
            <div class="row com">
                 <div class="col l4 m4 s4 borderRight">
                     <div class="dates ">22/11/16</div>
@@ -83,8 +82,6 @@ $winnerData = $query->fetch();
 
                     <div class="col l8 m8 s8">
                       <div class="row right">
-
-                         <a id="boutonmodal" class="waves-effect waves-light btn" href="#addcommentaire">Commenter</a>
                       </div>
                          <div class="commentaire">trop beau</div>
 
@@ -94,8 +91,8 @@ $winnerData = $query->fetch();
      </div>
 
            <div class="modal-footer">
-
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
+             <a id="boutonmodal" class="waves-effect waves-light btn" href="#addcommentaire">Ajouter Un Commenter</a>
             </div>
 
           </div>
