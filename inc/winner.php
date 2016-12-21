@@ -1,9 +1,5 @@
 <?php
 
-// Dernier Lundi
-$lastMonday = time() + ( date() - date("N") + 1) * 86400;
-$lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday), date("Y", $lastMonday));
-
 $query = $db->prepare('SELECT *, (islike - dontlike) AS diff from participant WHERE adddate >= "'.date("Y/m/d", $lastMonday-7*24*3600).'" and adddate < "'.date("Y/m/d", $lastMonday).'" ORDER BY diff DESC');
 $query->execute();
 $winnerData = $query->fetch();
@@ -55,7 +51,7 @@ $winnerData = $query->fetch();
 
                     <div class="col l8 m8 s8">
                       <div class="row right">
-                         <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">ajout de Commentaires</a>
+                         <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commenter</a>
                       </div>
                          <div class="commentaire">trop beau</div>
 
