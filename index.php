@@ -3,6 +3,10 @@
 // Connexion à la base de données
 include 'connect/connect.php';
 
+// Dernier Lundi
+$lastMonday = time() + (@date() - date("N") + 1) * 86400;
+$lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday), date("Y", $lastMonday));
+
 ?>
 
 <!DOCTYPE html>
@@ -23,10 +27,12 @@ include 'connect/connect.php';
     <div class="valign-wrapper teal darken-4" id="navBar">
       <?php include 'inc/navBar.php'; ?>
     </div>
-    <?php include 'inc/addSelfie.php'; ?>
-    <?php include 'inc/historic.php'; ?>
-    <?php include 'inc/about.php'; ?>
-    <?php include 'inc/load.php'; ?>
+    <?php
+      include 'inc/addSelfie.php';
+      include 'inc/historic.php';
+      include 'inc/about.php';
+      include 'inc/load.php';
+    ?>
     <div id="container-main">
     <?php
 
