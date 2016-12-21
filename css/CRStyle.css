@@ -83,36 +83,20 @@ color:red;
 
 }
 
+.com
+{
+  border-bottom:1px solid #004d40;
+  padding-bottom:10px;
 
+}
+.commentaire{
 
-.corpsleft{
-border:1px solid black;
-text-align: center;
-}
-.corpsright{
-  border: 1px solid black;
-  height:100%;
-}
-#comm{
-  text-align:center;
+  height:20%;
   color:#004d40;
 }
-#dates{
-  text-align:center;
-  color:#004d40;
-}
-#speudos{
-  text-align:center;
-  color:#004d40;
-}
-.com{
-
-  width:100%;
-
-   color:#004d40;
-   text-align:center;
-
-
+.borderRight
+{
+  border-right:1px solid #004d40;
 }
 
 .dates {
@@ -120,13 +104,11 @@ text-align: center;
   height:30px;
   color:#004d40;
   text-align:center;
-
-
 }
 .speudo{
   height:30px;
   color:#004d40;
-text-align:center;
+  text-align:center;
 }
 #modal1{
   background-color:white;

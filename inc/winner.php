@@ -46,35 +46,16 @@ $winnerData = $query->fetch();
    <!-- Modal Structure -->
    <div id="modal1" class="modal bottom-sheet">
      <div class="modal-content">
-           <div class="row">
-                <div class="col 4l m2 s2 center-align">
-                  <div class="corpsleft">
-                     <h6>date</h6><div class="dates valign-wrapper">22/11</div>
-                      <h6>pseudo</h6><div class="speudo valign-wrapper">22/11</div>
+           <div class="row com">
+                <div class="col l4 m4 s4 borderRight">
+                    <div class="dates ">22/11/16</div>
+                    <div class="speudo ">chris</div>
+                </div>
+                    <div class="col l8 m8 s8">
+                         <div class="commentaire">trop beau</div>
                     </div>
-                  </div>
-                    <div class="col l8 m8 s8 center-align">
-                      <div class="corpsright">
-                         <p>commentaires</p>
-                         <p><div class="com valign-wrapper ">trop beau </div></p>
-                       </div>
-                       </div>
-              </div>
-                        <div class="row">
-                       <div class="col 4l m2 s2 center-align">
-                            <h6>date</h6><div class="dates valign-wrapper" id="dates">22/11</div>
-                             <h6>pseudo</h6><div class="speudo valign-wrapper" id="speudos">22/11</div>
-                           </div>
-                           <div class="col l8 m8 s8 center-align">
-                                <p>commentaires</p>
-                                <div class="com valign-wrapper " id="comm">trop beau </div>
-                              </div>
-                            </div>
-
-
+            </div>
      </div>
-
-
 
            <div class="modal-footer">
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
