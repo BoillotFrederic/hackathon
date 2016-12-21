@@ -1,4 +1,17 @@
+<?php
 
+// Connexion à la base de données
+include 'connect/connect.php';
+
+// Dernier Lundi
+$lastMonday = time() - ( date("N") -1) * 86400;
+$lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday) +1, date("Y", $lastMonday));
+
+$query = $db->prepare('SELECT *, (islike - dontlike) AS diff from participant WHERE adddate >= "'.date("Y/m/d", $lastMonday-7*24*3600).'" and adddate < "'.date("Y/m/d", $lastMonday).'" ORDER BY diff DESC');
+$query->execute();
+$winnerData = $query->fetch();
+
+?>
 
 
 
@@ -15,7 +28,8 @@
 
      <div  class="row">
      <div class="col l12 m12 s12 center-align">
-         <img id="gagnant" onclick="clickimage();"src="imgs/zelda.png" alt="zelda">
+          <span><?php echo $winnerData['pseudo']; ?></span>
+         <img id="gagnant" onclick="clickimage();"src="uploads/<?php echo $winnerData['img']; ?>" alt="<?php echo $winnerData['pseudo']; ?>">
        <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commentaires</a>
     </div>
     <!--essai-->
