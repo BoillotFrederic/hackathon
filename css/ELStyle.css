@@ -61,9 +61,6 @@
   border: solid black 1px;
 }
 
-.rest{
-  position: relative;
-}
 
 .like{
   position: absolute;
@@ -99,6 +96,11 @@
   font-family: Ubuntu;
   color: #004D40;
   font-size: 2em;
+}
+
+.containerImg {
+  display: inline-block;
+  position: relative;
 }
 
 /*###########CHRISTIAN############*/

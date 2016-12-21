@@ -9,12 +9,14 @@ while($restData = $query->fetch())
 {
 ?>
   <div class="col l4 s12 m6 rest">
-    <div class="restpseudo"><?php echo $restData['pseudo']; ?></div>
-    <img class="responsive-img" src="uploads/<?php echo $restData['img']; ?>">
-    <div class="nbrlike"><?php echo $restData['islike']; ?></div>
-    <i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
-    <div class="nbrdislike"><?php echo $restData['dontlike']; ?></div>
-    <i class="dislike fa fa-thumbs-o-down fa-3x" aria-hidden="true"></i>
+    <div class="containerImg">
+      <div class="restpseudo"><?php echo $restData['pseudo']; ?></div>
+      <img class="responsive-img" src="uploads/<?php echo $restData['img']; ?>">
+      <div class="nbrlike"><?php echo $restData['islike']; ?></div>
+      <a href="#" class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true"></a>
+      <div class="nbrdislike"><?php echo $restData['dontlike']; ?></div>
+      <a href="#" class="dislike fa fa-thumbs-o-down fa-3x" aria-hidden="true"></a>
+    </div>
   </div>
 <?php
   }
