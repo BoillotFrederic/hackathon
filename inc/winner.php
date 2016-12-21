@@ -38,8 +38,8 @@ $winnerData = $query->fetch();
       <div id="like"></i><?php echo $winnerData['islike']; ?></div>
       <div id="like1"></i><?php echo $winnerData['dontlike']; ?></div>
     </div>
-<i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true">
-<i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true">
+<!-- <i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true">
+<i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true"> -->
      <!-- Modal Trigger -->
 
    <!-- Modal Structure -->
