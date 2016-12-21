@@ -61,24 +61,47 @@
   border: solid black 1px;
 }
 
-.rest{
-  position: relative;
-}
 
 .like{
   position: absolute;
-  left: 30px;
-  bottom: 150px;
+  left: 20px;
+  bottom: 20px;
   color: #64dd17;
 }
 
 .dislike {
   position: absolute;
   right: 20px;
-  bottom: 150px;
+  bottom: 20px;
   color: red;
 }
 
+.nbrlike {
+  font-size: 30px;
+  position: absolute;
+  right: 70px;
+  bottom: 20px;
+  color: red;
+}
+
+.nbrdislike {
+  font-size: 30px;
+  position: absolute;
+  left: 70px;
+  bottom: 20px;
+  color: #64dd17;
+}
+
+.restpseudo {
+  font-family: Ubuntu;
+  color: #004D40;
+  font-size: 2em;
+}
+
+.containerImg {
+  display: inline-block;
+  position: relative;
+}
 
 /*###########CHRISTIAN############*/
 #Compte {
@@ -89,4 +112,14 @@
 
 #Compte span {
   font-family: Ubuntu;
+}
+
+
+/*##########GOTOTOP##########*/
+
+#goToTop {
+  z-index: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
 }

@@ -19,6 +19,7 @@ include 'connect/connect.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
+    <?php include 'inc/goToTop.php'; ?>
     <div class="valign-wrapper teal darken-4" id="navBar">
       <?php include 'inc/navBar.php'; ?>
     </div>

@@ -1,3 +1,20 @@
+<?php
+$lastMonday = time() + ( date() - date("N") + 1) * 86400;
+
+$query=$db->prepare("SELECT *, (islike - dontlike) AS diff FROM participant WHERE adddate<='".date('Y/m/d', $lastMonday)."' AND adddate>'".date('Y/m/d', $lastMonday-604800000)." ORDER BY diff DESC'");
+$query->execute();
+$HistoricData=$query->fetch();
+echo $HistoricData['pseudo;'];
+// array getdate ([ int $timestamp = time("") ] );
+// print_r($today);
+// print_r(date_parse("2006-12-12 10:00:00.5"));
+// while ($HistoricData=$query->fetch()) {
+//     echo $HistoricData['pseudo'];
+//     echo $HistoricData['adddate'];
+//     echo $HistoricData['islike'];
+//     echo $HistoricData['dontlike'];
+// }
+?>
 <div id="historic" class="modal">
   <div class="modal-content">
     <h4 class="titreabout">Nos anciens gagnants et participants.</h4>
