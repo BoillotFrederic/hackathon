@@ -43,7 +43,7 @@
     font-family: Ubuntu;
     text-align: left;
     color: #004D40;
-    margin-left: 33%;
+    margin-left: 30%;
 }
 
 /*######################REST#######################*/
@@ -125,7 +125,7 @@
 }
 
 #goToTop a {
-  color: black;
+  color:black;
   outline: none;
   opacity: 0.5;
 }
