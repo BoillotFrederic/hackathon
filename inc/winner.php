@@ -8,7 +8,39 @@ $winnerData = $query->fetch();
 
 
 
-
+<div id="addcommentaire" class="modal">
+  <div class="modal-content">
+    <h4>Ajouter Un Commentaire</h4>
+    <div class="row">
+      <form id="submitAddCommentaire" class="col s12" method="post" enctype="multipart/form-data">
+        <div class="row">
+          <div class="input-field col s12">
+            <input autocomplete="off" id="pseudo" type="text" name="pseudo" class="validate">
+            <label for="pseudo">Pseudo</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input autocomplete="off" id="email" type="email" name="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>Commentaire</span>
+            <input autocomplete="off" id="file" name="file" type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input autocomplete="off" class="file-path validate" type="text">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a onclick="addForm(); return false;" href="" class="modal-action waves-effect waves-green btn-flat">Ajouter</a>
+  </div>
+</div>
 
 <div class="container">
    <div class="row">
@@ -51,7 +83,8 @@ $winnerData = $query->fetch();
 
                     <div class="col l8 m8 s8">
                       <div class="row right">
-                         <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commenter</a>
+
+                         <a id="boutonmodal" class="waves-effect waves-light btn" href="#addcommentaire">Commenter</a>
                       </div>
                          <div class="commentaire">trop beau</div>
 
