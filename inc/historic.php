@@ -1,10 +1,12 @@
 <?php
-$lastMonday = time() + ( date() - date("N") + 1) * 86400;
 
-$query=$db->prepare("SELECT *, (islike - dontlike) AS diff FROM participant WHERE adddate<='".date('Y/m/d', $lastMonday)."' AND adddate>'".date('Y/m/d', $lastMonday-604800000)." ORDER BY diff DESC'");
+$lastMonday = time() + (@date() - date("N") + 1) * 86400;
+$lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday), date("Y", $lastMonday));
+
+$query = $db->prepare("SELECT *, (islike - dontlike) AS diff FROM participant WHERE adddate <= '".date('Y/m/d', $lastMonday)."' AND adddate > '".date('Y/m/d', $lastMonday-7*24*3600)."' ORDER BY diff DESC");
 $query->execute();
 $HistoricData=$query->fetch();
-echo $HistoricData['pseudo;'];
+echo $HistoricData['pseudo'];
 // array getdate ([ int $timestamp = time("") ] );
 // print_r($today);
 // print_r(date_parse("2006-12-12 10:00:00.5"));

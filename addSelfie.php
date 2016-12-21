@@ -9,6 +9,7 @@
 
   // Le fichier
   $fileName = basename($_FILES['file']['name']);
+  $fileExt = pathinfo($fileName, PATHINFO_EXTENSION);
   $uploaddir = 'uploads/';
   $uploadfile = $uploaddir . $fileName;
 
@@ -21,8 +22,11 @@
   else if (!preg_match('/^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$/', POST_email))
   $error = 'email';
 
-  else if (!move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile))
+  else if (!@move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile))
   $error = 'file';
+
+  else if ($fileExt != 'jpg' && $fileExt != 'jpeg' && $fileExt != 'JPG' && $fileExt != 'JPEG')
+  $error = 'ext';
 
 if ($error)
 {
@@ -37,6 +41,8 @@ if ($error)
                 echo 'Tous les champs sont obligatoire';
                 else if($error == 'email')
                 echo 'L\'email est invalide';
+                else if($error == 'ext')
+                echo 'Le format attendu est uniquement le JPG/JPEG';
                 else
                 echo 'Le fichier n\'a pas pu être téléchargé';
               ?>
