@@ -24,9 +24,7 @@ include 'connect/connect.php';
       <?php include 'inc/navBar.php'; ?>
     </div>
     <?php include 'inc/addSelfie.php'; ?>
-    <?php
-    // include 'inc/historic.php';
-    ?>
+    <?php include 'inc/historic.php'; ?>
     <?php include 'inc/about.php'; ?>
     <?php include 'inc/load.php'; ?>
     <div id="container-main">
