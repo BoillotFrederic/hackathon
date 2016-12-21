@@ -67,6 +67,12 @@ font-size: 3em;
     color: #333E52;
 }
 /*///////////////////////////////////////*/
+#commentaire{
+  border:1px solid #c4c4cb;
+  height:265px;
+  overflow: scroll;
+  margin-top:1.8%;
+}
 #Compte{
 padding-bottom:2%;
   font-family: Digital;
@@ -82,39 +88,45 @@ color:red;
 
 }
 
+
 #comme{
   text-align: center;
-  color:white;
+  color:#004d40;
 }
 #datess{
   text-align:center;
-  color:white;
+  color:#004d40;
 }
-#speudo1{
+#speudos{
   text-align:center;
-  color:white;
+  color:#004d40;
 }
 .com{
-  border-bottom:1px solid white;
+  border-bottom:1px solid #004d40;
   width:100%;
   height:30px;
-   color:white;
+   color:#004d40;
+   text-align:center;
+
 
 }
 
-.dates{
-  border-bottom:1px solid white;
+.dates {
+  border-bottom:1px solid #004d40;
   height:30px;
-  color:white;
+  color:#004d40;
+  text-align:center;
+
 
 }
 .speudo{
   height:30px;
-  border-bottom:1px solid white;
-  color:white;
+  border-bottom:1px solid #004d40;
+  color:#004d40;
+text-align:center;
 }
 #modal1{
-  background-color: #004d40;
+  background-color:white;
   border-radius: 40px 40px 40px;
   width:100%;
 }
