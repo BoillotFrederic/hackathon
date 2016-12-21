@@ -35,11 +35,11 @@ $winnerData = $query->fetch();
        <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commentaires</a>
     </div>
     <div class="col l2 m2 s2 center-align">
-      <div id="like"><i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i><?php echo $winnerData['islike']; ?></div>
-      <div id="like1"><i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i><?php echo $winnerData['dontlike']; ?></div>
+      <div id="like"></i><?php echo $winnerData['islike']; ?></div>
+      <div id="like1"></i><?php echo $winnerData['dontlike']; ?></div>
     </div>
-
-
+<i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true">
+<i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true">
      <!-- Modal Trigger -->
 
    <!-- Modal Structure -->
