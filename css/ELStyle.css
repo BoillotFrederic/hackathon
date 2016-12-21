@@ -113,3 +113,13 @@
 #Compte span {
   font-family: Ubuntu;
 }
+
+
+/*##########GOTOTOP##########*/
+
+#goToTop {
+  z-index: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
