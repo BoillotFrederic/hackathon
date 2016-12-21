@@ -6,10 +6,10 @@
 src:url(../fonts/Ubuntu-M.ttf);
 font-family: Ubuntu;
 }
-.elise{
+/*.elise{
   padding-left: 2%;
   padding-right: 2%;
-}
+}*/
 #about{
     text-align: justify;
     font-family: Ubuntu;
@@ -21,10 +21,15 @@ font-family: Ubuntu;
   text-align-last: center;
   color:#2a2a2a;
   font-family: Ubuntu;
-  width:350px !important;
+  width:30% !important;
+  margin-bottom: 10%;
 }
+/*.picture{
+  width: 100px;
+  height:100px;
+}*/
 .carousel{
-    height:490px !important;
+    height:400px !important;
 }
 .carousel p{
     font-size: 20px;
@@ -40,7 +45,10 @@ font-family: Ubuntu;
    font-family: Ubuntu;
    padding-right: 20px;
  }
-
+.liste{
+  margin-bottom: 1%;
+  border: 1px solid grey;
+}
  .win{
    width:20%;
    height:20%;
