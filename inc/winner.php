@@ -59,7 +59,7 @@ $winnerData = $query->fetch();
          <img id="gagnant" onclick="clickimage();"src="uploads/<?php echo $winnerData['img']; ?>" alt="<?php echo $winnerData['pseudo']; ?>">
        <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commentaires</a>
     </div>
-    <div class="col l2 m2 s2 center ">
+    <div class="col l2 m2 s12 center-align ">
 
       <div id="like"><span class="num"><?php echo $winnerData['islike']; ?></span><i class="liker fa fa-thumbs-o-up fa-3x" aria-hidde="true"></i></div>
       <div id="like1"><span class="num"><?php echo $winnerData['dontlike']; ?></span><i class="disliker fa fa-thumbs-o-down fa-3x" aria-hidden="true"></i></div>
