@@ -2,11 +2,14 @@
 var formTemp = $('#addSelfie').html();
 var formBack = new Array(2);
 
+// Prochaine LIMIT
+var nextLimit = 9;
+
 function addForm()
 {
   formBack[0] = $("#pseudo").val();
   formBack[1] = $("#email").val();
-  
+
   var $form = $('#submitAddSelfie');
   var formdata = (window.FormData) ? new FormData($form[0]) : null;
   var data = (formdata !== null) ? formdata : $form.serialize();
@@ -20,29 +23,16 @@ function addForm()
       data: data,
       success: function (response)
       {
-        //alert(response);
-          // La réponse du serveur
       }
     }).done(function(response)
     {
       $('#addSelfie').html(response);
     });
-
-  // // Récupération des données
-  // formBack[0] = $("#pseudo").val();
-  // formBack[1] = $("#email").val();
-  //
-  // // Envoi du POST
-  // $.post("addSelfie.php", { pseudo: formBack[0], email: formBack[1], file: $("#file").val() }).done(function(data)
-  // {
-  //   $('#addSelfie').html(data);
-  // });
 }
 
 function addFormInit()
 {
-  $('#addSelfie').html(formTemp);
-  $('#addSelfie').modal('close');
+  location.reload();
 }
 
 function addFormBack()
@@ -59,5 +49,20 @@ $( document ).ready
   {
     $('.carousel').carousel();
     $('.modal').modal();
+
+    // Scrool Bottom Max
+    $(window).scroll(function()
+    {
+      if($(window).scrollTop() + $(window).height() >= $(document).height())
+      {
+        $('#load').modal('open');
+        $.post("restAutoLoad.php", { limit: nextLimit}).done(function(response)
+        {
+          $('#rest').html($('#rest').html() + response);
+          $('#load').modal('close');
+          nextLimit += 9;
+        });
+      }
+    });
   }
 );

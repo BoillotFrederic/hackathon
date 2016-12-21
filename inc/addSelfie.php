@@ -18,10 +18,10 @@
         <div class="file-field input-field">
           <div class="btn">
             <span>Le Selfie</span>
-            <input id="file" name="file" type="file">
+            <input autocomplete="off" id="file" name="file" type="file">
           </div>
           <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
+            <input autocomplete="off" class="file-path validate" type="text">
           </div>
         </div>
       </form>
