@@ -123,3 +123,9 @@
   bottom: 20px;
   right: 50px;
 }
+
+#goToTop a {
+  color: black;
+  outline: none;
+  opacity: 0.5;
+}
