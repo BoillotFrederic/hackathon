@@ -26,12 +26,12 @@ $winnerData = $query->fetch();
      </div>
 
      <div  class="row">
-     <div class="col l10 m12 s12 center-align">
+     <div class="col l10 m12 s12 center">
           <span><?php echo $winnerData['pseudo']; ?></span>
          <img id="gagnant" onclick="clickimage();"src="uploads/<?php echo $winnerData['img']; ?>" alt="<?php echo $winnerData['pseudo']; ?>">
        <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commentaires</a>
     </div>
-    <div class="col l2 m2 s2 center-align ">
+    <div class="col l2 m2 s2 center ">
 
       <div id="like"><span class="num"><?php echo $winnerData['islike']; ?></span><i class="liker fa fa-thumbs-o-up fa-3x" aria-hidde="true"></i></div>
       <div id="like1"><span class="num"><?php echo $winnerData['dontlike']; ?></span><i class="disliker fa fa-thumbs-o-down fa-3x" aria-hidden="true"></i></div>
@@ -51,14 +51,19 @@ $winnerData = $query->fetch();
                     <div class="dates ">22/11/16</div>
                     <div class="speudo ">chris</div>
                 </div>
-                    <div class="col l8 m8 s8">
+                    <div class="col l7 m8 s8">
                          <div class="commentaire">trop beau</div>
+
+                    </div>
+                    <div class="col l1 m1 s1 ">
+                      <a href="#!" class="ajout">Ajouter un commentaire</a>
                     </div>
             </div>
      </div>
 
            <div class="modal-footer">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
+
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
             </div>
 
           </div>
