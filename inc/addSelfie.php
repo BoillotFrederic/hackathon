@@ -1,9 +1,33 @@
 <div id="addSelfie" class="modal">
   <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
+    <h4>Ajouter Un Selfie</h4>
+    <div class="row">
+      <form id="submitAddSelfie" class="col s12" method="post" enctype="multipart/form-data">
+        <div class="row">
+          <div class="input-field col s12">
+            <input autocomplete="off" id="pseudo" type="text" name="pseudo" class="validate">
+            <label for="pseudo">Pseudo</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input autocomplete="off" id="email" type="email" name="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>Le Selfie</span>
+            <input id="file" name="file" type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
   <div class="modal-footer">
-    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ajouter</a>
+    <a onclick="addForm(); return false;" href="" class="modal-action waves-effect waves-green btn-flat">Ajouter</a>
   </div>
 </div>
