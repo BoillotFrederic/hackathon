@@ -5,7 +5,7 @@ include 'connect/connect.php';
 
 // Dernier Lundi
 $lastMonday = time() + ( date() - date("N") + 1) * 86400;
-$lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday) +1, date("Y", $lastMonday));
+$lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday), date("Y", $lastMonday));
 
 $query = $db->prepare('SELECT *, (islike - dontlike) AS diff from participant WHERE adddate >= "'.date("Y/m/d", $lastMonday-7*24*3600).'" and adddate < "'.date("Y/m/d", $lastMonday).'" ORDER BY diff DESC');
 $query->execute();
