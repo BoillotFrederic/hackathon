@@ -1,3 +1,10 @@
+<?php
+
+// Connexion à la base de données
+include 'connect/connect.php';
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
