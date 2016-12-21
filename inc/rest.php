@@ -13,9 +13,9 @@ while($restData = $query->fetch())
       <div class="restpseudo"><?php echo $restData['pseudo']; ?></div>
       <img class="responsive-img" src="uploads/<?php echo $restData['img']; ?>">
       <div class="nbrlike"><?php echo $restData['islike']; ?></div>
-      <a href="#" class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true"></a>
+      <a href="#" class="like fa fa-thumbs-o-up fa-2x" aria-hidden="true"></a>
       <div class="nbrdislike"><?php echo $restData['dontlike']; ?></div>
-      <a href="#" class="dislike fa fa-thumbs-o-down fa-3x" aria-hidden="true"></a>
+      <a href="#" class="dislike fa fa-thumbs-o-down fa-2x" aria-hidden="true"></a>
     </div>
   </div>
 <?php
