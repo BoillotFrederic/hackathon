@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/ELStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
-  <body>
+  <body id="top">
     <?php include 'inc/goToTop.php'; ?>
     <div class="valign-wrapper teal darken-4" id="navBar">
       <?php include 'inc/navBar.php'; ?>
