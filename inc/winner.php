@@ -1,8 +1,5 @@
 <?php
 
-// Connexion à la base de données
-include 'connect/connect.php';
-
 // Dernier Lundi
 $lastMonday = time() + ( date() - date("N") + 1) * 86400;
 $lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday), date("Y", $lastMonday));
@@ -34,64 +31,55 @@ $winnerData = $query->fetch();
          <img id="gagnant" onclick="clickimage();"src="uploads/<?php echo $winnerData['img']; ?>" alt="<?php echo $winnerData['pseudo']; ?>">
        <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commentaires</a>
     </div>
-    <div class="col l2 m2 s2 center-align">
-      <div id="like"></i><?php echo $winnerData['islike']; ?></div>
-      <div id="like1"></i><?php echo $winnerData['dontlike']; ?></div>
-    </div>
-<!-- <i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true">
-<i class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true"> -->
+    <div class="col l2 m2 s2 center-align ">
+
+      <div id="like"><span class="num"><?php echo $winnerData['islike']; ?></span><i class="liker fa fa-thumbs-o-up fa-3x" aria-hidde="true"></i></div>
+      <div id="like1"><span class="num"><?php echo $winnerData['dontlike']; ?></span><i class="disliker fa fa-thumbs-o-down fa-3x" aria-hidden="true"></i></div>
+     </div>
+
+
+
+
+
      <!-- Modal Trigger -->
 
    <!-- Modal Structure -->
    <div id="modal1" class="modal bottom-sheet">
      <div class="modal-content">
            <div class="row">
-                <div class="col 2l m2 s2 center-align">
+                <div class="col 4l m2 s2 center-align">
+                  <div class="corpsleft">
+                     <h6>date</h6><div class="dates valign-wrapper">22/11</div>
+                      <h6>pseudo</h6><div class="speudo valign-wrapper">22/11</div>
+                    </div>
+                  </div>
+                    <div class="col l8 m8 s8 center-align">
+                      <div class="corpsright">
+                         <p>commentaires</p>
+                         <p><div class="com valign-wrapper ">trop beau </div></p>
+                       </div>
+                       </div>
+              </div>
+                        <div class="row">
+                       <div class="col 4l m2 s2 center-align">
+                            <h6>date</h6><div class="dates valign-wrapper" id="dates">22/11</div>
+                             <h6>pseudo</h6><div class="speudo valign-wrapper" id="speudos">22/11</div>
+                           </div>
+                           <div class="col l8 m8 s8 center-align">
+                                <p>commentaires</p>
+                                <div class="com valign-wrapper " id="comm">trop beau </div>
+                              </div>
+                            </div>
 
-                     <div class="dates valign-wrapper" id="dates">22/11</div>
-                      <div class="dates valign-wrapper" id="dates1">22/11</div>
-                       <div class="dates valign-wrapper" id="dates2">22/11</div>
-                        <div class="dates valign-wrapper" id="dates3">22/11</div>
-                         <div class="dates valign-wrapper" id="dates4">22/11</div>
-                          <div class="dates valign-wrapper" id="dates5">22/11</div>
-                           <div class="dates valign-wrapper" id="dates6">22/11</div>
-                            <div class="dates valign-wrapper" id="dates7">22/11</div>
-
-                </div>
-      <div class="col 2l m2 s2 center-align">
-
-         <div class="speudo valign-wrapper" id="speudo">fred</div>
-          <div class="speudo valign-wrapper" id="speudo1">chris</div>
-           <div class="speudo valign-wrapper" id="speudo2">francois</div>
-            <div class="speudo valign-wrapper" id="speudo3">élise</div>
-             <div class="speudo valign-wrapper" id="speudo4">francois</div>
-              <div class="speudo valign-wrapper" id="speudo5">rémy</div>
-               <div class="speudo valign-wrapper" id="speudo6">greg</div>
-                <div class="speudo valign-wrapper" id="spudo7">thomas</div>
-
-
-      </div>
-
-
-      <div class="col l8 m8 s8 center-align">
-
-         <div class="com valign-wrapper " id="comm">trop beau </div>
-          <div class="com valign-wrapper" id="comm1">super </div>
-           <div class="com valign-wrapper" id="comm2">super</div>
-            <div class="com valign-wrapper" id="comm3">beau</div>
-             <div class="com valign-wrapper" id="comm4">super photo</div>
-              <div class="com valign-wrapper" id="comm5">cool trop bien</div>
-               <div class="com valign-wrapper" id="comm6">super</div>
-                <div class="com valign-wrapper" id="comm7">cool</div>
 
      </div>
 
-       </div>
-     </div>
+
 
            <div class="modal-footer">
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
             </div>
+
+          </div>
+    </div>
   </div>
-</div>
-</div>
