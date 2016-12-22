@@ -39,6 +39,7 @@ font-size: 5em;
 #boutonmodal{
   z-index:99 !important;
   position :relative;
+  margin-bottom: 50px;
 
 }
 @media only screen and (max-width: 320px){
