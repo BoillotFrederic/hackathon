@@ -33,7 +33,7 @@ font-family: Ubuntu;
   height:100px;
 }*/
 .carousel{
-    height:400px !important;
+    height:430px !important;
 }
 .carousel p{
     font-size: 20px;
@@ -75,10 +75,8 @@ background-color: #3299CC;
    font-size: 50px;
    color:#65909A;
  }
- .titreabout:hover {
-   background-color: #0033FF;
-   background-size: cover;
-   color: white;
+ .icon:hover {
+   color: black;
  }
  .titreli{
    text-align: justify;
