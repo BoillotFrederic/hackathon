@@ -25,13 +25,10 @@ $winnerData = $query->fetch();
             <label for="email">Email</label>
           </div>
         </div>
-        <div class="file-field input-field">
-          <div class="btn">
-            <span>Commentaire</span>
-            <input autocomplete="off" id="file" name="file" type="file">
-          </div>
-          <div class="file-path-wrapper">
-            <input autocomplete="off" class="file-path validate" type="text">
+        <div class="row">
+          <div class="input-field col s12">
+            <input autocomplete="off" id="commentaire" type="text" name="commentaire" class="validate">
+            <label for="commentaire">Commentaire</label>
           </div>
         </div>
       </form>
@@ -74,11 +71,10 @@ $winnerData = $query->fetch();
    <!-- Modal Structure -->
    <div id="modal1" class="modal bottom-sheet">
      <div class="modal-content">
-
            <div class="row com">
                 <div class="col l4 m4 s4 borderRight">
                     <div class="dates ">22/11/16</div>
-                    <div class="speudo ">chris</div>
+                    <div class="speudo">chris</div>
                 </div>
 
                     <div class="col l8 m8 s8">
