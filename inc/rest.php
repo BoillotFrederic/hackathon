@@ -13,10 +13,10 @@ while($restData = $query->fetch())
       <div class="restpseudo"><?php echo $restData['pseudo']; ?></div>
       <img class="responsive-img" src="uploads/<?php echo $restData['img']; ?>">
       <div class="backGwhite">
-      <div class="nbrlike"><?php echo $restData['islike']; ?></div>
-      <a href="#" class="like fa fa-thumbs-o-up fa-3x" aria-hidden="true"></a>
-      <div class="nbrdislike"><?php echo $restData['dontlike']; ?></div>
-      <a href="#" class="dislike fa fa-thumbs-o-down fa-3x" aria-hidden="true"></a>
+      <div id="nbrdislike<?php echo $restData['id']; ?>" class="nbrlike"><?php echo $restData['islike']; ?></div>
+      <a onclick="likeNdislike(this, 'true'); return false;" href="#" class="like fa fa-thumbs-o-up fa-3x" data-id="<?php echo $restData['id']; ?>" aria-hidden="true"></a>
+      <div id="nbrlike<?php echo $restData['id']; ?>" class="nbrdislike"><?php echo $restData['dontlike']; ?></div>
+      <a onclick="likeNdislike(this, 'false'); return false;" href="#" class="dislike fa fa-thumbs-o-down fa-3x" data-id="<?php echo $restData['id']; ?>" aria-hidden="true"></a>
     </div>
     </div>
   </div>

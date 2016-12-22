@@ -1,3 +1,17 @@
+// Like et dont't Like
+function likeNdislike(This, plusOrMinus)
+{
+  var idSelfie = This.getAttribute('data-id');
+
+  $.post("incLikenDontlike.php", { id: idSelfie, type: plusOrMinus }).done(function(response)
+  {
+    targetId = plusOrMinus == 'true' ? '#nbrlike' : '#nbrdislike';
+
+    if (response == 'true')
+    $(targetId + idSelfie).html(Number($(targetId + idSelfie).html()) + 1);
+  });
+}
+
 // Formulaire d'ajout
 var formTemp = $('#addSelfie').html();
 var comTemp = $('#addCom').html();
