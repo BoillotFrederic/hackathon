@@ -24,7 +24,7 @@ if (@$dbIP[ip] != $_SERVER["REMOTE_ADDR"])
   $prep -> execute();
 
   // Incrémentation
-  if (POST_type != 'true')
+  if (POST_type == 'true')
   $prep = $db -> prepare('UPDATE participant set islike=islike+1 WHERE id=:IN_id');
   else
   $prep = $db -> prepare('UPDATE participant set dontlike=dontlike+1 WHERE id=:IN_id');

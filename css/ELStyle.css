@@ -87,17 +87,17 @@
 .nbrlike {
   font-size: 30px;
   position: absolute;
-  right: 50px;
+  left: 50px;
   bottom: 20px;
-  color: red;
+  color: green;
 }
 
 .nbrdislike {
   font-size: 30px;
   position: absolute;
-  left: 50px;
+  right: 50px;
   bottom: 20px;
-  color: green;
+  color: red;
 }
 
 .restpseudo {
