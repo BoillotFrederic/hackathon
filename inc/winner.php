@@ -7,7 +7,7 @@ $winnerData = $query->fetch();
 ?>
 
 
-
+<!-- ajout de commentaire-->
 <div id="addCom" class="modal">
   <div class="modal-content">
     <h4>Ajouter Un Commentaire</h4>
@@ -31,28 +31,30 @@ $winnerData = $query->fetch();
   <div class="modal-footer">
     <a onclick="addCom(); return false;" href="" class="modal-action waves-effect waves-green btn-flat">Poster</a>
   </div>
-</div>
+</div><!-- fin de ajout de commentaire-->
 
 <div class="container">
    <div class="row">
      <div class="col l12 m12 s12 center-align">
-       <!--compte a rebours-->
+       <!--compte a rebour-->
        <?php
         $nbDays = date('d', (time() - (@date() - date("N")) * 86400)) - date('d');
         $nbDays = $nbDays . ' <span>jour' . (($nbDays > 1) ? 's' : '') . '</span>';
        ?>
           <p id="Compte"><span>Prochain gagnant dans</span> <?php echo $nbDays; ?> </p>
-    </div>
-   <div class="col l12 m12 s12 center-align">
-      <h3 class="blink"> Gagnant de la semaine précedente!</h3>
-  </div>
+    </div><!-- fin compte a rebour-->
 
-     </div>
+       <div class="col l12 m12 s12 center-align">
+      <h3 class="blink"> Gagnant de la semaine précedente!</h3>
+      </div>
+
+  </div>
 
    <div  class="row">
      <div class="col l12 m12 s12 center">
        <img id="medaille" src="imgs/medaille.jpeg"alt='medaille'>
      </div>
+
        <div class="col l12 m12 s12 center-align">
          <div class="col S12 m12 l12 center-align" style="width:100% !important">
           <div id="pseudogagnant"><?php echo $winnerData['pseudo']; ?></div>
@@ -67,7 +69,7 @@ $winnerData = $query->fetch();
        <div class="col s12 m12 l12 center">
        <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commentaires</a>
 
-</div>
+       </div>
 
 
 
@@ -101,14 +103,14 @@ $winnerData = $query->fetch();
         <?php
           }
         ?>
-     </div>
+      </div>
 
            <div class="modal-footer">
               <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
              <a id="boutonmodal" class="waves-effect waves-light btn" href="#addCom">Ajouter Un Commentaire</a>
             </div>
 
-          </div>
     </div>
+  </div>
 
 </div>
