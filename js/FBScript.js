@@ -6,7 +6,6 @@ function likeNdislike(This, plusOrMinus)
   $.post("incLikenDontlike.php", { id: idSelfie, type: plusOrMinus }).done(function(response)
   {
     targetId = plusOrMinus == 'true' ? '#nbrlike' : '#nbrdislike';
-
     if (response == 'true')
     $(targetId + idSelfie).html(Number($(targetId + idSelfie).html()) + 1);
   });
