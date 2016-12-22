@@ -82,6 +82,10 @@ color:red;
   color:black;
 
 }
+#pseudogagnant{
+  color:red;
+font-size:40px;
+}
 
 .commentaire
 {
@@ -124,7 +128,7 @@ color:red;
   height:auto;
   margin-top:60%;
   font-size: 2em;
-  color:#64dd17;
+  color:green;
 
 }
 #like1{
@@ -144,7 +148,7 @@ color:red;
 .liker{
   height:20px;
   width:20px;
-  color:#64dd17;
+  color:green;
 }
 #like1 span
 {
