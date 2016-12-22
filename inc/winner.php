@@ -8,19 +8,20 @@ $winnerData = $query->fetch();
 
 
 
-<div id="addcommentaire" class="modal">
+<div id="addCom" class="modal">
   <div class="modal-content">
     <h4>Ajouter Un Commentaire</h4>
     <div class="row">
-      <form id="submitAddCommentaire" class="col s12" method="post" enctype="multipart/form-data">
+      <form id="submitAddCom" data-id="<?php echo $winnerData['id']; ?>" class="col s12" method="post" enctype="multipart/form-data">
         <div class="row">
           <div class="input-field col s12">
-            <input autocomplete="off" id="pseudo" type="text" name="pseudo" class="validate">
-            <label for="pseudo">Pseudo</label>
+            <input autocomplete="off" id="pseudoCom" type="text" name="pseudoCom" class="validate">
+            <label for="pseudoCom">Pseudo</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
+<<<<<<< HEAD
             <input autocomplete="off" id="email" type="email" name="email" class="validate">
             <label for="email">Email</label>
           </div>
@@ -29,13 +30,17 @@ $winnerData = $query->fetch();
           <div class="input-field col s12">
             <input autocomplete="off" id="commentaire" type="text" name="commentaire" class="validate">
             <label for="commentaire">Commentaire</label>
+=======
+            <textarea autocomplete="off" id="textCom" class="materialize-textarea"></textarea>
+            <label for="textCom">Commentaire</label>
+>>>>>>> 16030c340c8b9af360cd9736d316b34a853d03d5
           </div>
         </div>
       </form>
     </div>
   </div>
   <div class="modal-footer">
-    <a onclick="addForm(); return false;" href="" class="modal-action waves-effect waves-green btn-flat">Ajouter</a>
+    <a onclick="addCom(); return false;" href="" class="modal-action waves-effect waves-green btn-flat">Poster</a>
   </div>
 </div>
 
@@ -64,34 +69,46 @@ $winnerData = $query->fetch();
 
 
 
-
-
      <!-- Modal Trigger -->
 
    <!-- Modal Structure -->
    <div id="modal1" class="modal bottom-sheet">
      <div class="modal-content">
+<<<<<<< HEAD
            <div class="row com">
                 <div class="col l4 m4 s4 borderRight">
                     <div class="dates ">22/11/16</div>
                     <div class="speudo">chris</div>
                 </div>
+=======
 
-                    <div class="col l8 m8 s8">
-                      <div class="row right">
+        <?php
+>>>>>>> 16030c340c8b9af360cd9736d316b34a853d03d5
 
-                         <a id="boutonmodal" class="waves-effect waves-light btn" href="#addcommentaire">Commenter</a>
-                      </div>
-                         <div class="commentaire">trop beau</div>
+        $prep = $db->prepare('SELECT *, DATE_FORMAT(comdate,"%d/%m/%Y") AS date_mdY from comments WHERE idselfie=:id  ORDER BY comdate DESC LIMIT 0,10');
+        $prep -> bindValue(':id', intval($winnerData['id']), PDO::PARAM_INT);
+        $prep->execute();
 
-                    </div>
-
+        while($comData = $prep->fetch())
+        {
+        ?>
+          <div class="row borderBottom">
+            <div class="col l2 m3 s6 borderRight msgUser">
+              <span class="speudo "><?php echo $comData['pseudo']; ?></span> à posté<br />
+              Le <span class="dates "><?php echo $comData['date_mdY']; ?></span>
             </div>
+            <div class="col l10 m9 s6">
+              <p class="commentaire"><?php echo $comData['com']; ?></p>
+            </div>
+          </div>
+        <?php
+          }
+        ?>
      </div>
 
            <div class="modal-footer">
-
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
+             <a id="boutonmodal" class="waves-effect waves-light btn" href="#addCom">Ajouter Un Commenter</a>
             </div>
 
           </div>
