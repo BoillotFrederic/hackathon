@@ -21,19 +21,8 @@ $winnerData = $query->fetch();
         </div>
         <div class="row">
           <div class="input-field col s12">
-<<<<<<< HEAD
-            <input autocomplete="off" id="email" type="email" name="email" class="validate">
-            <label for="email">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input autocomplete="off" id="commentaire" type="text" name="commentaire" class="validate">
-            <label for="commentaire">Commentaire</label>
-=======
             <textarea autocomplete="off" id="textCom" class="materialize-textarea"></textarea>
             <label for="textCom">Commentaire</label>
->>>>>>> 16030c340c8b9af360cd9736d316b34a853d03d5
           </div>
         </div>
       </form>
@@ -74,16 +63,8 @@ $winnerData = $query->fetch();
    <!-- Modal Structure -->
    <div id="modal1" class="modal bottom-sheet">
      <div class="modal-content">
-<<<<<<< HEAD
            <div class="row com">
-                <div class="col l4 m4 s4 borderRight">
-                    <div class="dates ">22/11/16</div>
-                    <div class="speudo">chris</div>
-                </div>
-=======
-
         <?php
->>>>>>> 16030c340c8b9af360cd9736d316b34a853d03d5
 
         $prep = $db->prepare('SELECT *, DATE_FORMAT(comdate,"%d/%m/%Y") AS date_mdY from comments WHERE idselfie=:id  ORDER BY comdate DESC LIMIT 0,10');
         $prep -> bindValue(':id', intval($winnerData['id']), PDO::PARAM_INT);
@@ -114,3 +95,4 @@ $winnerData = $query->fetch();
           </div>
     </div>
   </div>
+</div>
