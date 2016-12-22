@@ -6,10 +6,14 @@
 src:url(../fonts/Ubuntu-M.ttf);
 font-family: Ubuntu;
 }
-/*.elise{
-  padding-left: 2%;
-  padding-right: 2%;
-}*/
+@font-face{
+  font-family: titre;
+  src:url(../fonts/titre.ttf);
+}
+.elise{
+  font-size: 30px;
+  font-family: titre;
+}
 #about{
     text-align: justify;
     font-family: Ubuntu;
