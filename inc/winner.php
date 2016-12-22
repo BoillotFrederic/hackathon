@@ -48,8 +48,8 @@ $winnerData = $query->fetch();
      <div class="col l12 m12 s12 center">
        <img id="medaille" src="imgs/medaille.jpeg"alt='medaille'>
      </div>
-       <div class="col l12 m12 s12 center">
-         <div class="col S12 m12 l12 center">
+       <div class="col l12 m12 s12 center-align">
+         <div class="col S12 m12 l12 center-align">
           <span id="pseudogagnant"><?php echo $winnerData['pseudo']; ?></span>
         </div>
           <div id="divgagnant">
