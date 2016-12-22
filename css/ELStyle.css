@@ -64,14 +64,14 @@
 
 .like{
   position: absolute;
-  left: 20px;
+  left: 10px;
   bottom: 20px;
-  color: #64dd17;
+  color: green;
 }
 
 .dislike {
   position: absolute;
-  right: 20px;
+  right: 10px;
   bottom: 20px;
   color: red;
 }
@@ -79,7 +79,7 @@
 .nbrlike {
   font-size: 30px;
   position: absolute;
-  right: 60px;
+  right: 50px;
   bottom: 20px;
   color: red;
 }
@@ -87,9 +87,9 @@
 .nbrdislike {
   font-size: 30px;
   position: absolute;
-  left: 60px;
+  left: 50px;
   bottom: 20px;
-  color: #64dd17;
+  color: green;
 }
 
 .restpseudo {
@@ -103,6 +103,14 @@
   position: relative;
 }
 
+ .backGwhite {
+   z-index:999;
+   bottom: 0;
+   width: 100%;
+   position: absolute;
+   height: 70px;
+   background-color: rgba(255,255,255,.5);
+ }
 /*###########CHRISTIAN############*/
 #Compte {
     padding: 1%;
