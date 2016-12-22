@@ -1,6 +1,6 @@
 <div class="row">
-  <div class="col m12 s12 l12">
-<div id="car" class="carousel center-align">
+  <div class="col m11 s12 l12">
+<div id="car" class="carousel center-align block-center">
 
 <?php
 $i = 2;
