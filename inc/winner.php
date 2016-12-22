@@ -44,20 +44,26 @@ $winnerData = $query->fetch();
 
      </div>
 
-     <div  class="row">
-     <div class="col l10 m12 s12 center">
+   <div  class="row">
+     <div class="col l12 m12 s12 center">
        <img id="medaille" src="imgs/medaille.jpeg"alt='medaille'>
      </div>
-       <div class="col l10 m12 s12 center">
+       <div class="col l12 m12 s12 center">
           <span id="pseudogagnant"><?php echo $winnerData['pseudo']; ?></span>
-         <img id="gagnant" onclick="clickimage();"src="uploads/<?php echo $winnerData['img']; ?>" alt="<?php echo $winnerData['pseudo']; ?>">
-       <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commentaires</a>
+          <div id="divgagnant">
+            <img class="center responsive-img" id="gagnant" onclick="clickimage();"src="uploads/<?php echo $winnerData['img']; ?>" alt="<?php echo $winnerData['pseudo']; ?>">
+            <div id="like"><span class="num"><?php echo $winnerData['islike']; ?></span><a href="#" class="liker fa fa-thumbs-o-up fa-3x" aria-hidde="true"></a></div>
+            <div id="like1"><span class="num"><?php echo $winnerData['dontlike']; ?></span><a href="#" class="disliker fa fa-thumbs-o-down fa-3x" aria-hidden="true"></a></div>
+          </div>
+       </div>
     </div>
-    <div class="col l2 m2 s12 center-align ">
+       <div class="col s12 m12 l12 center">
+       <a id="boutonmodal" class="waves-effect waves-light btn" href="#modal1">Commentaires</a>
 
-      <div id="like"><span class="num"><?php echo $winnerData['islike']; ?></span><i class="liker fa fa-thumbs-o-up fa-3x" aria-hidde="true"></i></div>
-      <div id="like1"><span class="num"><?php echo $winnerData['dontlike']; ?></span><i class="disliker fa fa-thumbs-o-down fa-3x" aria-hidden="true"></i></div>
-     </div>
+</div>
+
+
+
 
 
 
@@ -97,5 +103,5 @@ $winnerData = $query->fetch();
 
           </div>
     </div>
-  </div>
+
 </div>
