@@ -10,12 +10,12 @@ $id = POST_id;
 
 // Vérification du votant
 $prep = $db->prepare('SELECT * from iplikendislike WHERE ip=:ip and idselfie=:idselfie');
-$prep -> bindParam(':idselfie', $id);
 $prep -> bindParam(':ip', $_SERVER["REMOTE_ADDR"]);
+$prep -> bindParam(':idselfie', $id);
 $prep->execute();
 $dbIP = $prep->fetch();
 
-if (@$dbIP[ip] != $_SERVER["REMOTE_ADDR"])
+if (@$dbIP['ip'] != $_SERVER["REMOTE_ADDR"])
 {
   $prep = $db -> prepare('INSERT INTO iplikendislike (idselfie, ip) VALUES (:id, :ip)');
   $prep -> bindParam(':ip', $_SERVER["REMOTE_ADDR"]);

@@ -11,7 +11,7 @@ $lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday), 
 define('nextLimit', (isset($_POST['limit']) && is_numeric($_POST['limit']) ? $_POST['limit'] : 0));
 $limit = nextLimit;
 
-$prep = $db -> prepare('SELECT * from participant  WHERE adddate > "'.date("Y/m/d", $lastMonday).'"  ORDER BY adddate DESC LIMIT :limit,9');
+$prep = $db -> prepare('SELECT * from participant  WHERE adddate > "'.date("Y/m/d", $lastMonday).'"  ORDER BY id DESC LIMIT :limit,9');
 $prep -> bindValue(':limit', intval($limit), PDO::PARAM_INT);
 $prep -> execute();
 
