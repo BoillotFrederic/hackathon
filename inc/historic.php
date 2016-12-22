@@ -38,7 +38,7 @@ $HistoricData7=$query->fetch();
 ?>
 <div id="historic" class="modal">
   <div class="modal-content">
-    <h4 class="titreabout">Gagnants des 5 dernières semaines.</h4>
+    <h4 class="titreabout">Les Derniers Gagnants.</h4>
     <img src="imgs/winner.jpg" class="win responsive-img center-block">
       <ul class="collection with-header">
         <li class="blue liste row valign-warpper collection-item"><div class="col m12 s12 l12"><div class="col m4 s7 l4 name"><?php echo $HistoricData['pseudo']; ?></div><div class="name col m4 s4 l4" ><?php echo $HistoricData['adddate']; ?></div>
