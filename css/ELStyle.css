@@ -112,7 +112,7 @@
 }
 
  .backGwhite {
-   z-index:999;
+   z-index:2;
    bottom: 0;
    width: 100%;
    position: absolute;
