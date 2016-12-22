@@ -12,6 +12,8 @@
   $fileExt = pathinfo($fileName, PATHINFO_EXTENSION);
   $uploaddir = 'uploads/';
   $uploadfile = $uploaddir . $fileName;
+  $uploadedfile = $_FILES['file']['tmp_name'];
+  $file = $_FILES['file']['tmp_name'];
 
   // Vérification du post
   $error = '';
@@ -22,8 +24,8 @@
   else if (!preg_match('/^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$/', POST_email))
   $error = 'email';
 
-  else if (!move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile))
-  $error = 'file';
+  // else if (!$fileName)
+  // $error = 'file';
 
   else if ($fileExt != 'jpg' && $fileExt != 'jpeg' && $fileExt != 'JPG' && $fileExt != 'JPEG')
   $error = 'ext';
@@ -68,6 +70,26 @@ else
 </div>
 
 <?php
+// Upload et redimenssionnement
+$src = @imagecreatefromjpeg($file);
+
+@list($width,$height)=@getimagesize($uploadedfile);
+
+$newwidth=500;
+$newheight=($height/$width)*$newwidth;
+$tmp=@imagecreatetruecolor($newwidth,$newheight);
+
+@imagecopyresampled($tmp,$src,0,0,0,0,$newwidth,$newheight,
+
+ $width,$height);
+
+$filename = "uploads/". $_FILES['file']['name'];
+
+@imagejpeg($tmp,$filename,100);
+
+@imagedestroy($src);
+@imagedestroy($tmp);
+
 // Ajout des données à la base des données
 $pseudo = POST_pseudo;
 $email = POST_email;
