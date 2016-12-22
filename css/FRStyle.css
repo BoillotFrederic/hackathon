@@ -10,6 +10,12 @@ font-family: Ubuntu;
   font-family: titre;
   src:url(../fonts/titre.ttf);
 }
+@media all and (max-width: 600px){
+  #historic{
+    height:300px !important;
+    width:100% !important;
+  }
+}
 .elise{
   font-size: 30px;
   font-family: titre;
@@ -25,7 +31,7 @@ font-family: Ubuntu;
   text-align-last: center;
   color:#2a2a2a;
   font-family: Ubuntu;
-  width:30% !important;
+  width:300px !important;
   margin-bottom: 10%;
 }
 /*.picture{
