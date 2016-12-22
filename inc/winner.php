@@ -36,6 +36,7 @@ $winnerData = $query->fetch();
 <div class="container">
    <div class="row">
      <div class="col l12 m12 s12 center-align">
+       <!--compte a rebours-->
           <p id="Compte"></p>
     </div>
    <div class="col l12 m12 s12 center-align">
@@ -54,8 +55,8 @@ $winnerData = $query->fetch();
         </div>
           <div id="divgagnant">
             <img class="center responsive-img" id="gagnant" onclick="clickimage();"src="uploads/<?php echo $winnerData['img']; ?>" alt="<?php echo $winnerData['pseudo']; ?>">
-            <div id="like"><span class="num"><?php echo $winnerData['islike']; ?></span><a href="#" class="liker fa fa-thumbs-o-up fa-3x" aria-hidde="true"></a></div>
-            <div id="like1"><span class="num"><?php echo $winnerData['dontlike']; ?></span><a href="#" class="disliker fa fa-thumbs-o-down fa-3x" aria-hidden="true"></a></div>
+            <div id="like"><span class="num"><?php echo $winnerData['islike']; ?></span><a  class="liker fa fa-thumbs-o-up fa-3x" aria-hidde="true"></a></div>
+            <div id="like1"><span class="num"><?php echo $winnerData['dontlike']; ?></span><a  class="disliker fa fa-thumbs-o-down fa-3x" aria-hidden="true"></a></div>
           </div>
        </div>
     </div>
