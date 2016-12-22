@@ -57,8 +57,7 @@ font-family: Ubuntu;
    padding-right: 20px;
  }
 .liste{
-  margin-bottom: 1%;
-  border: 1px solid transparent;
+  border: none !important;
 }
  .win{
    width:20%;
