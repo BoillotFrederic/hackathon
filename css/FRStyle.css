@@ -47,7 +47,7 @@ font-family: Ubuntu;
  }
 .liste{
   margin-bottom: 1%;
-  border: 1px solid grey;
+  border: 1px solid transparent;
 }
  .win{
    width:20%;
@@ -62,7 +62,7 @@ background-color: #3299CC;
 }
  .icon{
    color: #36648B;
-   padding-right: 20px;
+   padding-right: 40px;
    padding-left: 40px;
  }
  .titreabout {
