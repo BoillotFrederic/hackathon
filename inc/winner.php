@@ -49,8 +49,8 @@ $winnerData = $query->fetch();
        <img id="medaille" src="imgs/medaille.jpeg"alt='medaille'>
      </div>
        <div class="col l12 m12 s12 center-align">
-         <div class="col S12 m12 l12 center-align">
-          <span id="pseudogagnant"><?php echo $winnerData['pseudo']; ?></span>
+         <div class="col S12 m12 l12 center-align" style="width:100% !important">
+          <div id="pseudogagnant"><?php echo $winnerData['pseudo']; ?></div>
         </div>
           <div id="divgagnant">
             <img class="center responsive-img" id="gagnant" onclick="clickimage();"src="uploads/<?php echo $winnerData['img']; ?>" alt="<?php echo $winnerData['pseudo']; ?>">
