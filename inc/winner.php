@@ -44,7 +44,7 @@ $winnerData = $query->fetch();
           <p id="Compte"><span>Prochain gagnant dans</span> <?php echo $nbDays; ?> </p>
     </div>
    <div class="col l12 m12 s12 center-align">
-      <h3 class="blink"> Gagnant de la semaine!</h3>
+      <h3 class="blink"> Gagnant de la semaine précedente!</h3>
   </div>
 
      </div>
