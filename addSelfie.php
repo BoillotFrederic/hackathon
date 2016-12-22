@@ -22,7 +22,7 @@
   else if (!preg_match('/^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$/', POST_email))
   $error = 'email';
 
-  else if (!@move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile))
+  else if (!move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile))
   $error = 'file';
 
   else if ($fileExt != 'jpg' && $fileExt != 'jpeg' && $fileExt != 'JPG' && $fileExt != 'JPEG')
