@@ -3,7 +3,7 @@
 
 <?php
 
-$query = $db->prepare('SELECT * from participant  WHERE adddate > "'.date("Y/m/d", $lastMonday).'"  ORDER BY adddate DESC LIMIT 0,9');
+$query = $db->prepare('SELECT * from participant  WHERE adddate > "'.date("Y/m/d", $lastMonday).'"  ORDER BY id DESC LIMIT 0,9');
 $query->execute();
 while($restData = $query->fetch())
 {
