@@ -9,7 +9,10 @@
     font-family: "Titre";
     src: url("../fonts/titre.ttf");
 }
-
+@font-face{
+  font-family: louisa;
+  src:url(../fonts/louisa.otf);
+}
 
 
 /*############DESCRIPTION###########*/
@@ -101,7 +104,7 @@
 }
 
 .restpseudo {
-  font-family: Titre;
+  font-family: louisa;
   color: #004D40;
   font-size: 2em;
 }

@@ -7,8 +7,8 @@ src:url(../fonts/Ubuntu-M.ttf);
 font-family: Ubuntu;
 }
 @font-face{
-  font-family: titre;
-  src:url(../fonts/titre.ttf);
+  font-family: louisa;
+  src:url(../fonts/louisa.otf);
 }
 @media all and (max-width: 600px){
   #historic{
@@ -19,7 +19,7 @@ font-family: Ubuntu;
 }
 .elise{
   font-size: 30px;
-  font-family: titre;
+  font-family: louisa;
 }
 #about{
     text-align: justify;
@@ -31,7 +31,7 @@ font-family: Ubuntu;
   text-align: justify;
   text-align-last: center;
   color:#2a2a2a;
-  font-family: Ubuntu;
+  font-family: louisa;
   width:300px !important;
   margin-bottom: 10%;
 }

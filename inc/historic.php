@@ -41,15 +41,15 @@ $HistoricData7=$query->fetch();
     <h4 class="titreabout">Gagnants des 5 dernières semaines.</h4>
     <img src="imgs/winner.jpg" class="win responsive-img center-block">
       <ul class="collection with-header">
-        <li class="blue liste row valign-warpper collection-item"><div class="col m12 s12 l12"><div class="col m4 s5 l4 name"><?php echo $HistoricData['pseudo']; ?></div><div class="name col m4 s6 l4" ><?php echo $HistoricData['adddate']; ?></div>
-          <div class="col m4 l4 hide-on-small-only"><i class="fa fa-thumbs-up icon" aria-hidden="true"><?php echo $HistoricData['islike']; ?></i><i class="fa fa-thumbs-down icon" aria-hidden="true"><?php echo $HistoricData['dontlike']; ?></i></a></div></div></li>
-        <li class="red liste row valign-warpper collection-item"><div class="col m12 s12 l12"><div class="col m4 s6 l4 name"><?php echo $HistoricData1['pseudo']; ?></div><div class="name col m4 s6 l4"><?php echo $HistoricData1['adddate']; ?></div>
+        <li class="blue liste row valign-warpper collection-item"><div class="col m12 s12 l12"><div class="col m4 s7 l4 name"><?php echo $HistoricData['pseudo']; ?></div><div class="name col m4 s4 l4" ><?php echo $HistoricData['adddate']; ?></div>
+          <div class="col m4 l4 hide-on-small-only"><i class="fa fa-thumbs-up icon" aria-hidden="true"><?php echo $HistoricData['islike']; ?></i><i class="fa fa-thumbs-down icon" aria-hidden="true"><?php echo $HistoricData['dontlike']; ?></i></a></div></li>
+        <li class="red liste row valign-warpper collection-item"><div class="col m12 s12 l12"><div class="col m4 s7 l4 name"><?php echo $HistoricData1['pseudo']; ?></div><div class="name col m4 s4 l4"><?php echo $HistoricData1['adddate']; ?></div>
           <div class="col m4 l4 hide-on-small-only"><i class="fa fa-thumbs-up icon" aria-hidden="true"><?php echo $HistoricData1['islike']; ?></i><i class="fa fa-thumbs-down icon" aria-hidden="true"><?php echo $HistoricData1['dontlike']; ?></i></a></div></li>
-        <li class="yellow liste row valign-warpper collection-item"><div class="col m12 s12 l12"><div class="col m4 s6 l4 name"><?php echo $HistoricData2['pseudo']; ?></div><div class="name col m4 s6 l4"><?php echo $HistoricData2['adddate']; ?></div>
+        <li class="yellow liste row valign-warpper collection-item"><div class="col m12 s12 l12"><div class="col m4 s7 l4 name"><?php echo $HistoricData2['pseudo']; ?></div><div class="name col m4 s4 l4"><?php echo $HistoricData2['adddate']; ?></div>
           <div class="col m4 l4 hide-on-small-only"><i class="fa fa-thumbs-up icon" aria-hidden="true"><?php echo $HistoricData2['islike']; ?></i><i class="fa fa-thumbs-down icon" aria-hidden="true"><?php echo $HistoricData2['dontlike']; ?></i></a></div></li>
-        <li class="green liste row valign-warpper collection-item"><div class="col m12 s12 l12"><div class="col m4 s6 l4 name "><?php echo $HistoricData3['pseudo']; ?></div><div class="name col m4 s6 l4"><?php echo $HistoricData3['adddate']; ?></div>
+        <li class="green liste row valign-warpper collection-item"><div class="col m12 s12 l12"><div class="col m4 s7 l4 name "><?php echo $HistoricData3['pseudo']; ?></div><div class="name col m4 s4 l4"><?php echo $HistoricData3['adddate']; ?></div>
           <div class="col m4 l4 hide-on-small-only"><i class="fa fa-thumbs-up icon" aria-hidden="true"><?php echo $HistoricData3['islike']; ?></i><i class="fa fa-thumbs-down icon" aria-hidden="true"><?php echo $HistoricData3['dontlike']; ?></i></a></div></li>
-        <li class="orange liste valign-warpper row collection-item"><div class="col m12 s12 l12"><div class="col m4 s6 l4 name"><?php echo $HistoricData4['pseudo']; ?></div><div class="name col m4 s6 l4"><?php echo $HistoricData4['adddate']; ?></div>
+        <li class="orange liste valign-warpper row collection-item"><div class="col m12 s12 l12"><div class="col m4 s7 l4 name"><?php echo $HistoricData4['pseudo']; ?></div><div class="name col m4 s4 l4"><?php echo $HistoricData4['adddate']; ?></div>
           <div class="col m4 l4 hide-on-small-only"><i class="fa fa-thumbs-up icon" aria-hidden="true"><?php echo $HistoricData4['islike']; ?></i><i class="fa fa-thumbs-down icon" aria-hidden="true"><?php echo $HistoricData4['dontlike']; ?></i></a></div></li>
       </ul>
     <p></p>
