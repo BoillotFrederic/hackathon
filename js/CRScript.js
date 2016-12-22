@@ -26,7 +26,7 @@ var Affiche=document.getElementById("Compte");
 	function Rebour() {
 
 	var date1 = new Date();
-	var date2 = new Date ("dec 22 17:00:00 2016");
+	var date2 = new Date ("dec 25 23:59:59 2016");
 	var sec = (date2 - date1) / 1000;
 	var n = 24 * 3600;
 	if (sec > 0) {

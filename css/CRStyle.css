@@ -74,10 +74,10 @@ font-size: 5em;
     animation: fadeinout 2s infinite;
     font-family: Ubuntu;
     padding-bottom:5%;
-    color: #333E52;
+    color:#f0c42b;
 }
 /*///////////////////////////////////////*/
-
+              /*compte a rebour*/
 #Compte{
 padding-bottom:2%;
   font-family: Digital;
@@ -92,6 +92,8 @@ color:red;
   color:black;
 
 }
+/*/////////////////////////////////////////*/
+/*  pseudogagnant*/
 #pseudogagnant{
   color:red;
 font-size:40px;
@@ -119,7 +121,8 @@ font-family:Titre;
   background-color:white;
   width:100%;
 }
-
+/*/////////////////////////////////////////*/
+          /*pouce */
 #like1 .disliker{
   bottom: 20px;
   position: absolute;
@@ -142,7 +145,7 @@ font-family:Titre;
   right: 70px;
   position: absolute;
   font-size: 2em;
-  /*display:inline-block;*/
+
 }
 #like .num
 {
@@ -151,10 +154,4 @@ font-family:Titre;
   color: green;
   bottom: 20px;
   position: absolute;
-
-  /*display:inline-block;*/
-}
-.ajout{
-  color: #004d40;
-
 }
