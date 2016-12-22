@@ -8,6 +8,11 @@
     src: url("../fonts/DigitalPlayItalicSt.ttf")
 }
 
+@font-face {
+    font-family: "Titre";
+    src: url("../fonts/titre.ttf")
+}
+
 /*logo taille */
 
 
@@ -16,8 +21,8 @@ z-index:99 !important;
 color:white;
 text-align:center;
 margin-top:10%;
-font-family:Ubuntu;
-font-size: 3em;
+font-family:titre;
+font-size: 5em;
 
 }
 
