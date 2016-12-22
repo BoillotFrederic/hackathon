@@ -86,7 +86,7 @@ $winnerData = $query->fetch();
         ?>
           <div class="row borderBottom">
             <div class="col l2 m3 s6 borderRight msgUser">
-              <span class="speudo "><?php echo $comData['pseudo']; ?></span> à posté<br />
+              <span class="speudo "><?php echo $comData['pseudo']; ?></span> a posté<br />
               Le <span class="dates "><?php echo $comData['date_mdY']; ?></span>
             </div>
             <div class="col l10 m9 s6">
@@ -100,7 +100,7 @@ $winnerData = $query->fetch();
 
            <div class="modal-footer">
               <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">FERMER</a>
-             <a id="boutonmodal" class="waves-effect waves-light btn" href="#addCom">Ajouter Un Commenter</a>
+             <a id="boutonmodal" class="waves-effect waves-light btn" href="#addCom">Ajouter Un Commentaire</a>
             </div>
 
           </div>

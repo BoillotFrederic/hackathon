@@ -12,6 +12,7 @@ font-family: Ubuntu;
 }
 @media all and (max-width: 600px){
   #historic{
+    list-style: none;
     height:300px !important;
     width:100% !important;
   }
