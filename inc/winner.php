@@ -37,7 +37,11 @@ $winnerData = $query->fetch();
    <div class="row">
      <div class="col l12 m12 s12 center-align">
        <!--compte a rebours-->
-          <p id="Compte"></p>
+       <?php
+        $nbDays = date('d', (time() - (@date() - date("N")) * 86400)) - date('d');
+        $nbDays = $nbDays . ' <span>jour' . (($nbDays > 1) ? 's' : '') . '</span>';
+       ?>
+          <p id="Compte"><span>Prochain gagnant dans</span> <?php echo $nbDays; ?> </p>
     </div>
    <div class="col l12 m12 s12 center-align">
       <h3 class="blink"> Gagnant de la semaine!</h3>
