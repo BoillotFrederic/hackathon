@@ -1,5 +1,7 @@
 <?php
-// $lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday), date("Y", $lastMonday));
+//A l'execution du modal historique de la navbar => Requete pour parcourir les participants entre la date du début (ici du dernier lundi) et chaque semaines, et listé grâce à la différence entre les vote j'aime et n'aime pas
+
+
 $lastMonday = time() + ( @date() - date("N") + 1) * 86400;
 $lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday), date("Y", $lastMonday));
 $query=$db->prepare("SELECT *, (islike - dontlike) AS diff FROM participant WHERE adddate<='".date('Y/m/d', $lastMonday)."' AND adddate>'".date('Y/m/d', $lastMonday-604800)."' ORDER BY diff DESC");
@@ -26,15 +28,6 @@ $HistoricData6=$query->fetch();
 $query=$db->prepare("SELECT *, (islike - dontlike) AS diff FROM participant WHERE adddate<='".date('Y/m/d', $lastMonday-4233600)."' AND adddate>'".date('Y/m/d', $lastMonday-4838400)."' ORDER BY diff DESC");
 $query->execute();
 $HistoricData7=$query->fetch();
-// array getdate ([ int $timestamp = time("") ] );
-// print_r($today);
-// print_r(date_parse("2006-12-12 10:00:00.5"));
-// while ($HistoricData=$query->fetch()) {
-//     echo $HistoricData['pseudo'];
-//     echo $HistoricData['adddate'];
-//     echo $HistoricData['islike'];
-//     echo $HistoricData['dontlike'];
-// }
 ?>
 <div id="historic" class="modal">
   <div class="modal-content">
