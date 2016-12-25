@@ -1,12 +1,10 @@
 <?php
-//
 // Connexion à la base de données
 include 'connect/connect.php';
 
 // Dernier Lundi
 $lastMonday = time() + (@date() - date("N") + 1) * 86400;
 $lastMonday = mktime(0, 0, 0, date("m", $lastMonday)  , date("d", $lastMonday), date("Y", $lastMonday));
-//
 ?>
 
 <!DOCTYPE html>
