@@ -8,7 +8,7 @@
 $i = 2;
 $query = $db->prepare('SELECT *, (islike - dontlike) AS diff from participant WHERE adddate >= "'.date("Y/m/d", $lastMonday-7*24*3600).'" and adddate < "'.date("Y/m/d", $lastMonday).'" ORDER BY diff DESC LIMIT 1, 9');
 $query->execute();  //la variable utilise la methode execute qui lance la boucle while qui suit
-while($TopData = $query->fetch()) //fetch renvoie sous forme de tableau le 
+while($TopData = $query->fetch()) //fetch renvoie sous forme de tableau l'image dans le carousel avec affecté à lui sa place determiné par la variable i
 {
   if ($i==2) $itext="2nd";
   else if($i==3) $itext="3rd";
